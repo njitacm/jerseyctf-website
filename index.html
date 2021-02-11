@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<!-- 
+    Search thru file for TODOs to complete
+-->
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <title>JerseyCTF</title>
+
+    <!-- Favicon at the top (in the tab) -->
+    <link rel="shortcut icon" type="image/jpg" href="img/lock1.png" />
+
+</head>
+
+<body style="font-family: 'Montserrat', sans-serif;">
+    <!-- JavaScript Bundle with Popper  (For Bootstrap)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Navbar:: to move around the site a bit better -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+        <!-- TODO: Navbar logo for the website is needed -->
+        <!-- <img src="img/logo.png" class="img-fluid"> -->
+        <div class="container-fluid">
+            <a href="#"> <img src="img/Title_Only.png" class="navbar-brand" width="150" height="50"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#registration">Registration</a>
+                    <a class="nav-link" href="#schedule">Schedule</a>
+                    <a class="nav-link" href="#speakers">Speakers</a>
+                    <a class="nav-link" href="#sponsors">Sponsors</a>
+                    <a class="nav-link" href="#recognitions">Recognitions</a>
+                    <!-- <a class="nav-link" href="#links">Links</a> -->
+                    <a class="nav-link" href="#faq">FAQ</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Actual HTML not the navbar -->
+    <div class="container-fluid" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="10"
+        tabindex="0">
+
+
+        <div class="row justify-content-center" style="background-color: #a8a8a8;">
+            <div class="col3"></div>
+            <div class="col-3 col-center">
+
+                <!--<img src="img/wide_scren.png" class="img-thumbnail" alt="JerseyCTF Landing Page"> -->
+                <img src="img/lock2.png" class="mx-auto d-block" alt="JerseyCTF Landing Page" width="75%">
+
+            </div>
+            <div class="col-3 col align-self-center">
+                <!--<img src="img/wide_scren.png" class="img-thumbnail" alt="JerseyCTF Landing Page"> -->
+
+                <h5 class="title-info">When: April 10th-11th, 2021</h5>
+                <h5 class="title-info">Where: Online via Discord!</h5>
+
+
+            </div>
+            <div class="col3"></div>
+        </div>
+        <div id="registration" class="row">
+            <h4 class="jerctf">@registration</h4>
+            <!-- TODO: Add link to the href below-->
+            <h5>Registration for the 1st annual JerseyCTF is now open! Click <a href="">HERE</a> to register!</h5>
+        </div>
+
+        <div id="schedule" class="row">
+            <h4 class="jerctf">@schedule</h4>
+            <!-- TODO: Make iframe like the one below -->
+            <!-- DOC: https://support.google.com/calendar/answer/41207?hl=en -->
+
+            <!-- ADD CALENDAR LATER
+
+            <iframe style="margin:auto;"
+                src="https://calendar.google.com/calendar/embed?showNav=0&amp;showPrint=0&amp;showCalendars=0&amp;mode=AGENDA&amp;wkst=1&amp;src=kb4vge7ofkjf12bh84p5b6lr1c@group.calendar.google.com&amp;dates=20201107/20201108"
+                scrolling="no" width="1000" height="600" frameborder="0"></iframe>
+            -->
+
+            <h4> Coming soon! </h4>
+        </div>
+
+        <div id="speakers" class="row justify-content-evenly">
+            <h4 class="jerctf">@speakers</h4>
+            <!-- Template is already complete just copy and paste these are edit accordingly
+                The Website is responsive.
+            -->
+            <!-- TODO: Fill out template for each speaker -->
+            <!-- TEMPLATE::START -->
+            <div class="col-md-6 col-lg-4 col-sm-8" style="padding-bottom: 7px;">
+                <div class="card">
+                    <!-- TODO: CHANGE IMG, TITLE, AND TEXT -->
+                    <img src="img/wide_scren.png" class="card-img-top" alt="NAME OF PERSON">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">NAME OF PERSON</h5>
+                        <p class="card-text">Short description about them</p>
+                    </div>
+                </div>
+            </div>
+            <!-- TEMPLATE::END -->
+        </div>
+
+        <div id="sponsors" class="row justify-content-evenly">
+            <h4 class="jerctf">@sponsors</h4>
+            <!-- TODO: Just put actual logos here, and fill out COMPANY NAME in alt -->
+            <!-- TO ADD A COMPANY COPY & PASTE TEMPLATE and switch out src and change alt -->
+            <div class="col">
+                <h5 style="text-align: center;" class="sponsec"><span class="sponsor-gold">CISO Sponsor</span></h5>
+                <div class="row justify-content-evenly">
+                    <!-- GOLD SPONSOR -->
+                    <!-- TEMPLATE::START -->
+                    <div class="col-6">
+                        <img class="img-fluid" src="img/jctf_ex_company_logo.png" alt="EX COMPANY">
+                    </div>
+                    <!-- TEMPLATE::END -->
+                    <div class="col-6">
+                        <img class="img-fluid" src="img/original_pro_logo.png" alt="EX COMPANY">
+                    </div>
+                </div>
+
+                <h5 style="text-align: center;" class="sponsec"><span class="sponsor-silver">Security Manager
+                        Sponsor</span></h5>
+                <div class="row justify-content-evenly">
+                    <!-- SILVER SPONSOR -->
+                    <!-- TEMPLATE::START -->
+                    <div class="col-5">
+                        <img class="img-fluid" src="img/jctf_ex_company_logo.png" alt="EX COMPANY">
+                    </div>
+                    <!-- TEMPLATE::END -->
+
+                    <div class="col-5">
+                        <img class="img-fluid" src="img/original_pro_logo.png" alt="EX COMPANY">
+                    </div>
+                </div>
+
+                <h5 style="text-align: center;" class="sponsec"><span class="sponsor-bronze">Security Analyst
+                        Sponsor</span></h5>
+                <div class="row justify-content-evenly">
+                    <!-- BRONZE SPONSOR-->
+                    <!-- TEMPLATE::START -->
+                    <div class="col-4">
+                        <img class="img-fluid" src="img/jctf_ex_company_logo.png" alt="EX COMPANY">
+                    </div>
+                    <!-- TEMPLATE::END -->
+                </div>
+            </div>
+        </div>
+
+        <div id="recognitions" class="row justify-content-evenly">
+            <h4 class="jerctf">@recognitions</h4>
+            <!-- TODO: Add ppl we need to recognize for help with CTF -->
+
+            <!-- TEMPLATE::START -->
+            <div class="col-md-4 col-lg-3 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+                    <!-- TODO: CHANGE IMG, TITLE, AND TEXT -->
+                    <img src="img/wide_scren.png" class="card-img-top" alt="NAME OF PERSON">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">NAME OF PERSON</h5>
+                        <p class="card-text">Short description about them</p>
+                    </div>
+                </div>
+            </div>
+            <!-- TEMPLATE::END -->
+        </div>
+
+        <div id="faq" class="row">
+            <h4 class="jerctf">@faq</h4>
+            <!-- For additional FAQ questions. Simply write an <h5> tag with the question and then a <p> tag (below the <h5> tag) with the answer-->
+            <h5 class="faq-question">What is JerseyCTF?</h5>
+            <!-- TODO: Fill out description for JerseyCTF within the <p> tags -->
+            <p>JerseyCTF is a beginner-friendly CTF, meant to get people interested in security.
+                The competition is open to anyone, so we will make sure to provide a range of challenge
+                difficulties.</p>
+
+            <h5 class="faq-question">When and where is JerseyCTF?</h5>
+            <!-- TODO: Fill in DATE -->
+            <p>JerseyCTF will be virtually hosted on Discord. The competition will be on April 10th-11th, 2021!</p>
+
+            <h5 class="faq-question">Who can sign up to compete?</h5>
+            <p>Students, beginners, and professionals are all welcome to compete as long as they are over the age of
+                18.</p>
+
+            <h5 class="faq-question">Will there be prizes?</h5>
+            <p>Yes! There are 2 leaderboard divisions: Student and Open.
+                Prizes will be awarded in both divisions for top scoring teams, and anyone who checks-in will
+                receive a complimentary
+                JerseyCTF t-shirt!</p>
+
+            <h5 class="faq-question">How big is JerseyCTF?</h5>
+            <p>Space is limited, so we will be capping the competition at a maximum of 125 teams or 500 people.</p>
+
+            <h5 class="faq-question">Do I have to pay to compete in JerseyCTF?</h5>
+            <p>Nope, there's no fee to sign up or to attend!</p>
+
+            <h5 class="faq-question">Do I have to register as a team?</h5>
+            <p>No! You're welcome to register with your friends and compete with a team, but you can also register
+                by yourself and find a team at the event.</p>
+
+            <h5 class="faq-question">You guys haven't answered my question!</h5>
+            <p>Feel free to email us any additional questions and concerns to <a
+                    href="mailto:acm@njit.edu">acm@njit.edu</a>.</p>
+
+        </div>
+
+    </div>
+    <div id="foots">
+        <footer class="foots">
+            <div class="col">
+                JerseyCTF is hosted by
+            </div>
+            <div class="col">
+                <a href="https://njit.acm.org"><img class="img-fluid foots-img" src="img/white_hollow_acm.png"
+                        alt="NJIT ACM Logo"></a>
+                <a href="https://csnp.org"><img class="img-fluid foots-img" src="img/csnp_hollow.png"
+                        alt="CSNP Logo"></a>
+                <br><br>
+                <p> <a href="https://www.acm.org/code-of-ethics">Code of Conduct</a> </p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+<!-- Site template done by Sig•Mal -->
+
+</html>
