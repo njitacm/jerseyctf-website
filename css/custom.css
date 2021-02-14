@@ -48,7 +48,10 @@
 .sponsor-silver { background-color: #b9c1c9; }
 .sponsor-bronze { background-color: #bd9939; }
 .sponsor-thanks { background-color: #f53d3d; }
-
+.centralize{
+    margin: auto;    
+    display: block;
+}
 /* .jerctf {
     padding: 20px;
     background-color: #3485fe;
