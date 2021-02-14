@@ -1,5 +1,8 @@
 # jerseyctf-registration-site
-The website for the JerseyCTF Site
+The website for the JerseyCTF Site for NJITACM
+
+<!-- NJIT ACM LOGO -->
+![](https://github.com/NJIT-ACM/NJIT-ACM/blob/main/ACMLOGO.png)
 
 ## Technical Details
 * A static site 
