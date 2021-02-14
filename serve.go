@@ -55,7 +55,7 @@ func main() {
 
 	const (
 		PORT = 9990
-		mode = 0
+		mode = 1
 	)
 
 	// turns int to string
