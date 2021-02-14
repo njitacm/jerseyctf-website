@@ -8,6 +8,8 @@ The website for the JerseyCTF Site for NJITACM
 * A static site 
 * The back-end (web server) is written in **golang-go**
 * The front-end is written using **Bootstrapv5**
+* The purpose is to be run on a **droplet from DigitalOcean** via (using) **Nginx**
+    * _However feel free to deploy as you wish_
 
 ## Purpose
 * Made to be deployed onto a Droplet (cloud server on DigitalOcean) easily
