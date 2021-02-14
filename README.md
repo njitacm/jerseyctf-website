@@ -11,6 +11,10 @@ The website for the JerseyCTF Site for NJITACM
 * The purpose is to be run on a **droplet from DigitalOcean** via (using) **Nginx**
     * _However feel free to deploy as you wish_
 
+## Current View of Website
+![](img/TopBitOfWebsite.png)
+* Shows the Top Bit of the Website
+
 ## Purpose
 * Made to be deployed onto a Droplet (cloud server on DigitalOcean) easily
 * Check '[How To Deploy a Go Web Application Using Nginx on Ubuntu 18.04](https://www.digitalocean.com/community/tutorials/how-to-deploy-a-go-web-application-using-nginx-on-ubuntu-18-04)' for further instructions on deploying the site to web.
