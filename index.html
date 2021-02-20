@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
 
     <title>JerseyCTF</title>
-
+    <base target="_blank">
     <!-- Favicon at the top (in the tab) -->
     <link rel="shortcut icon" type="image/jpg" href="img/lock1.png" />
 
@@ -36,21 +36,22 @@
         <!-- TODO: Navbar logo for the website is needed -->
         <!-- <img src="img/logo.png" class="img-fluid"> -->
         <div class="container-fluid">
-            <a href="#"> <img src="img/Title_Only.png" class="navbar-brand" width="150" height="50"> </a>
+            <a href="#" target="_self"> <img src="img/Title_Only.png" class="navbar-brand" width="150" height="50"> </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#registration">Registration</a>
-                    <a class="nav-link" href="#schedule">Schedule</a>
-                    <a class="nav-link" href="#speakers">Speakers</a>
-                    <a class="nav-link" href="#sponsors">Sponsors</a>
-                    <a class="nav-link" href="#recognitions">Recognitions</a>
+                    <a class="nav-link" aria-current="page" href="#" target="_self">Home</a>
+                    <a class="nav-link" href="#registration" target="_self">Registration</a>
+                    <a class="nav-link" href="#schedule" target="_self">Schedule</a>
+                    <a class="nav-link" href="#speakers" target="_self">Speakers</a>
+                    <a class="nav-link" href="#sponsors" target="_self">Sponsors</a>
+                    <a class="nav-link" href="#faq" target="_self">FAQ</a>
+                    <a class="nav-link" href="#recognitions" target="_self">Recognitions</a>
                     <!-- <a class="nav-link" href="#links">Links</a> -->
-                    <a class="nav-link" href="#faq">FAQ</a>
+
                 </div>
             </div>
         </div>
@@ -82,7 +83,8 @@
         <div id="registration" class="row">
             <h4 class="jerctf">@registration</h4>
             <!-- TODO: Add link to the href below-->
-            <h5>Registration for the 1st annual JerseyCTF is now open! Click <a href="">HERE</a> to register!</h5>
+            <h5>Registration for the 1st annual JerseyCTF is now open! Click <a
+                    href="https://forms.gle/psChLqsWHqL6DhxGA">HERE</a> to register!</h5>
         </div>
 
         <div id="schedule" class="row">
@@ -107,9 +109,115 @@
             -->
             <!-- TODO: Fill out template for each speaker -->
             <!-- TEMPLATE::START -->
-            <div class="col-md-4 col-lg-3 col-sm-6" style="padding-bottom: 7px;">
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
                 <div class="card">
                     <!-- TODO: CHANGE IMG, TITLE, AND TEXT -->
+                    <img src="img/AbdelSyFane.jpg" class="card-img-top" alt="Abdel Sy Fane">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">Abdel Sy Fane</h5>
+
+                        <p>President, CSNP<br><br><br><br>Speaker Topic:<br><i>DevSecOps</i><br><br><br><br>
+                            <a href="https://www.linkedin.com/in/abdelsyfane">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- TEMPLATE::END -->
+
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+
+                    <img src="img/GabrielleBotbol.jpg" class="card-img-top" alt="Gabrielle Botbol">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">Gabrielle Botbol</h5>
+
+                        <p>Pentester, CSbyGB<br><br><br><br>Speaker Topic:<br><i>Solving Web Security Vulnerabilities
+                                with Pentesting</i><br><br>
+                            <a href="https://www.linkedin.com/in/gabriellebotbol/">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+
+                    <img src="img/IlanPonimansky.jpg" class="card-img-top" alt="Ilan Ponimansky">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">Ilan Ponimansky</h5>
+
+                        <p>Cloud Security Consultant, ScaleSec<br><br><br>Speaker Topic:<br><i>Cloud
+                                Security</i><br><br><br><br>
+                            <a href="https://www.linkedin.com/in/ilanponimansky/">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+
+                    <img src="img/JohnJackson.jpg" class="card-img-top" alt="John Jackson">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">John Jackson</h5>
+
+                        <p>App. Security Engineer, Shutterstock & Founder, Sakura Samurai<br><br>Speaker
+                            Topic:<br><i>Day Zero to 0day, Offensive Security Theory</i><br><br>
+                            <a href="https://www.linkedin.com/in/johnjhacking/">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+
+                    <img src="img/JonHelmus.jpg" class="card-img-top" alt="John Helmus">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">John Helmus</h5>
+
+                        <p>Manager of Pentest Community, Cobalt.io<br><br><br>Speaker Topic:<br><i>Functional Testing: A
+                                New Era of Pentesting</i><br><br><br>
+                            <a href="https://www.linkedin.com/in/jon-helmus-474146103/">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+
+                    <img src="img/SethKirschner.jpg" class="card-img-top" alt="Seth Kirschner">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">Seth Kirschner</h5>
+
+                        <p>Security Engineer & Assistant Vice President, MUFG
+                            <br><br>Speaker Topic:<br><i>Cyber Consulting</i><br><br><br><br>
+                            <a href="https://www.linkedin.com/in/sethkirschner/">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+
+                    <img src="img/WilliamPrice.png" class="card-img-top" alt="William Price">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">William Price</h5>
+
+                        <p>President, CyberX<br><br><br><br>Speaker Topic:<br><i>Hacking Humans: Using OSINT for Social
+                                Engineering Scenarios</i><br><br>
+                            <a href="https://www.linkedin.com/in/cyberxcyecurityspecialistbers/">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!---   
+            <div class="col-md-4 col-lg-3 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+                    
                     <img src="img/person_placeholder.png" class="card-img-top" alt="NAME OF PERSON">
                     <div class="card-body">
                         <h5 style="font-weight: bold;" class="card-title">NAME OF PERSON</h5>
@@ -117,7 +225,7 @@
                     </div>
                 </div>
             </div>
-            <!-- TEMPLATE::END -->
+        -->
         </div>
 
         <div id="sponsors" class="row justify-content-evenly">
@@ -125,66 +233,61 @@
             <!-- TODO: Just put actual logos here, and fill out COMPANY NAME in alt -->
             <!-- TO ADD A COMPANY COPY & PASTE TEMPLATE and switch out src and change alt -->
             <div class="col">
-                <h5 style="text-align: center;" class="sponsec"><span class="sponsor-gold"><b>CISO Sponsor</b></span></h5>
+                <h5 style="text-align: center;" class="sponsec"><span class="sponsor-gold"><b>CISO Sponsor</b></span>
+                </h5>
                 <div class="row justify-content-evenly">
                     <!-- GOLD SPONSOR -->
-                    <!-- TEMPLATE::START -->
+                    <!-- TEMPLATE::START 
                     <div class="col-6">
                         <img class="centralize" src="img/sponsor_placeholder.png" alt="EX COMPANY">
                     </div>
-                    <!-- TEMPLATE::END -->
+                    TEMPLATE::END 
                     <div class="col-6">
                         <img class="centralize" src="img/sponsor_placeholder.png" alt="EX COMPANY">
                     </div>
+                -->
+                    <br><br>
                 </div>
 
                 <h5 style="text-align: center;" class="sponsec"><span class="sponsor-silver"><b>Security Manager
-                        Sponsor</b></span></h5>
+                            Sponsor</b></span></h5>
                 <div class="row justify-content-evenly">
                     <!-- SILVER SPONSOR -->
-                    <!-- TEMPLATE::START -->
+                    <!-- TEMPLATE::START 
                     <div class="col-5">
                         <img class="centralize" src="img/sponsor_placeholder.png" alt="EX COMPANY">
                     </div>
-                    <!-- TEMPLATE::END -->
+                     TEMPLATE::END
 
                     <div class="col-5">
                         <img class="centralize" src="img/sponsor_placeholder.png" alt="EX COMPANY">
-                    </div>
+                    </div> 
+                -->
+                    <br><br>
                 </div>
 
                 <h5 style="text-align: center;" class="sponsec"><span class="sponsor-bronze"><b>Security Analyst
-                        Sponsor</b></span></h5>
+                            Sponsor</b></span></h5>
 
                 <div class="row justify-content-evenly">
                     <!-- BRONZE SPONSOR-->
-                    <!-- TEMPLATE::START -->
+                    <!-- TEMPLATE::START 
                     <div class="col-4">
                         <img class="centralize" src="img/sponsor_placeholder.png" alt="EX COMPANY">
+                    </div>-->
+                    <div class="d-flex justify-content-evenly">
+                        <a href="https://contrastsecurity.com/">
+                            <img class="img-fluid" src="img/Contrast_Security_logo.png" alt="Contrast Security">
+                        </a>
+            
                     </div>
+
                     <!-- TEMPLATE::END -->
                 </div>
 
             </div>
         </div>
 
-        <div id="recognitions" class="row justify-content-evenly">
-            <h4 class="jerctf">@recognitions</h4>
-            <!-- TODO: Add ppl we need to recognize for help with CTF -->
-
-            <!-- TEMPLATE::START -->
-            <div class="col-md-4 col-lg-3 col-sm-6" style="padding-bottom: 7px;">
-                <div class="card">
-                    <!-- TODO: CHANGE IMG, TITLE, AND TEXT -->
-                    <img src="img/person_placeholder.png" class="card-img-top" alt="NAME OF PERSON">
-                    <div class="card-body">
-                        <h5 style="font-weight: bold;" class="card-title">NAME OF PERSON</h5>
-                        <p class="card-text">Short description about them</p>
-                    </div>
-                </div>
-            </div>
-            <!-- TEMPLATE::END -->
-        </div>
 
         <div id="faq" class="row">
             <h4 class="jerctf">@faq</h4>
@@ -225,6 +328,67 @@
 
         </div>
 
+        <div id="recognitions" class="row justify-content-evenly">
+            <h4 class="jerctf">@recognitions</h4>
+            <!-- TODO: Add ppl we need to recognize for help with CTF -->
+
+            <!-- TEMPLATE::START
+            <div class="col-md-4 col-lg-3 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+                    <img src="img/person_placeholder.png" class="card-img-top" alt="NAME OF PERSON">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">NAME OF PERSON</h5>
+                        <p class="card-text">Short description about them</p>
+                    </div>
+                </div>
+            </div>
+            TEMPLATE::END -->
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">Abdel Sy Fane</h5>
+                        <p class="card-text">General Organization</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">Dina Anello</h5>
+                        <p class="card-text">Sponsorships</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">Ilan Ponimansky</h5>
+                        <p class="card-text">Engineering</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">NJIT ACM E-Board</h5>
+                        <p class="card-text">General Organization</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-2 col-sm-6" style="padding-bottom: 7px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 style="font-weight: bold;" class="card-title">Toni Diaz</h5>
+                        <p class="card-text">Marketing</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <div id="foots">
         <footer class="foots">
@@ -236,9 +400,9 @@
                         alt="NJIT ACM Logo"></a>
                 <a href="https://csnp.org"><img class="img-fluid foots-img" src="img/csnp_hollow.png"
                         alt="CSNP Logo"></a>
-                <br> 
+                <br>
                 <a href="https://computing.njit.edu/"><img class="img-fluid foots-img" src="img/njit_logo.png"
-                    alt="NJIT Logo"></a>
+                        alt="NJIT Logo"></a>
 
                 <!-- Temporarily commented out Code of Conduct
 
