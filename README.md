@@ -12,8 +12,8 @@ The website for the JerseyCTF Site for NJITACM
     * _However feel free to deploy as you wish_
 
 ## Current View of Website
-![](img/TopBitOfWebsite.png)
-* Shows the Top Bit of the Website
+![](img/fullsite-jerseyctf.png)
+* Shows the full view of the Website
 
 ## Purpose
 * Made to be deployed onto a Droplet (cloud server on DigitalOcean) easily
