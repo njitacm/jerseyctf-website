@@ -1,6 +1,6 @@
 package lib
 
 type Person struct {
-	Name string, 
+	Name   string
 	Sector string
 }

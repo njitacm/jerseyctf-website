@@ -2,39 +2,10 @@
 <div id="faq" class="row">
     <h4 class="jerctf">@faq</h4>
 
-    <h5 class="faq-question">What is JerseyCTF?</h5>
-
-    <p>JerseyCTF is a beginner-friendly CTF, meant to get people interested in security.
-        The competition is open to anyone, so we will make sure to provide a range of challenge
-        difficulties.</p>
-
-    <h5 class="faq-question">When and where is JerseyCTF?</h5>
-
-    <p>JerseyCTF will be virtually hosted on Discord. The competition will be on April 10th-11th, 2021!</p>
-
-    <h5 class="faq-question">Who can sign up to compete?</h5>
-    <p>Students, beginners, and professionals are all welcome to compete as long as they are over the age of
-        18.</p>
-
-    <h5 class="faq-question">Will there be prizes?</h5>
-    <p>Yes! There are 2 leaderboard divisions: Student and Open.
-        Prizes will be awarded in both divisions for top scoring teams, and anyone who checks-in will
-        receive a complimentary
-        JerseyCTF t-shirt!</p>
-
-    <h5 class="faq-question">How big is JerseyCTF?</h5>
-    <p>Space is limited, so we will be capping the competition at a maximum of 125 teams or 500 people.</p>
-
-    <h5 class="faq-question">Do I have to pay to compete in JerseyCTF?</h5>
-    <p>Nope, there's no fee to sign up or to attend!</p>
-
-    <h5 class="faq-question">Do I have to register as a team?</h5>
-    <p>No! You're welcome to register with your friends and compete with a team, but you can also register
-        by yourself and find a team at the event.</p>
-
-    <h5 class="faq-question">You guys haven't answered my question!</h5>
-    <p>Feel free to email us any additional questions and concerns at <a
-            href="mailto:jerseyctf@njit.edu">jerseyctf@njit.edu</a>.</p>
-
+    {{range .}}
+        <h5 class="faq-question">{{.Question}}</h5>
+        <p>{{.Answer}}</p>
+    {{end}}
+    
 </div>
 {{end}}
