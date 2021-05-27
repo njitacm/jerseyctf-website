@@ -2,65 +2,55 @@
 <div id="sponsors" class="row justify-content-evenly">
     <h4 class="jerctf">@sponsors</h4>
 
-    <div class="col">
-        <h5 style="text-align: center;" class="sponsec"><span class="sponsor-gold"><b>Title Sponsor</b></span>
+    <div class="col text-center">
+        <h5 class="sponsec"><span class="sponsor-gold">Title Sponsor</span>
         </h5>
         <div class="row justify-content-evenly">
-
-            <div class="d-flex justify-content-evenly">
-                <a href="https://specterops.io/">
-                    <img class="img-fluid" src="img/Specter_ops_logo.png" alt="Specter Ops" width="400"
-                        height="80">
-                </a>
+            
+            <div class="col-6 col-sm-5 col-lg-3"> 
+            {{range .Gold}}
+            
+                <div class="d-flex justify-content-evenly">
+                    <a href="{{.HREF}}">
+                        <img class="img-fluid" src="/assets/img/{{.SrcFile}}" alt="{{.ALT}}">
+                    </a>
+                </div>
+            {{end}}
             </div>
-
-            <div class="d-flex justify-content-evenly">
-                <a href="https://www.cyber.nj.gov/">
-                    <img class="img-fluid" src="img/NJCCIC_logo.png" alt="NJCCIC" width="200" height="200">
-                </a>
-            </div>
-
         </div>
-        <br>
 
-        <h5 style="text-align: center;" class="sponsec"><span class="sponsor-silver"><b>CISO Sponsor</b></span>
+        <h5 class="sponsec"><span class="sponsor-silver">CISO Sponsor</span>
         </h5>
         
         <div class="row justify-content-evenly">
-            <div class="d-flex justify-content-evenly">
-                <a href="https://www.digitalocean.com/">
-                    <img class="img-fluid" src="img/DO_Logo.png" alt="Digital Ocean" width="250">
-                </a>
+
+            <div class="col-6 col-sm-5 col-lg-3">
+            {{range .Silver}}
+                <div class="d-flex justify-content-evenly">
+                    <a href="{{.HREF}}">
+                        <img class="img-fluid" src="/assets/img/{{.SrcFile}}" alt="{{.ALT}}">
+                    </a>
+                </div>
+            {{end}}
             </div>
+
         </div>
+
+        <h5 class="sponsec"><span class="sponsor-bronze">Security Analyst
+                    Sponsor</span></h5>
+
         <div class="row justify-content-evenly">
-            <div class="d-flex justify-content-evenly">
-                <a href="https://www.knowbe4.com/">
-                    <img class="img-fluid" src="img/KnowBe4_logo.png" alt="KnowBe4" width="300">
-                </a>
+
+            <div class="col-6 col-sm-5 col-lg-3">
+            {{range .Bronze}}
+                <div class="d-flex justify-content-evenly">
+                    <a href="{{.HREF}}">
+                        <img class="img-fluid" src="/assets/img/{{.SrcFile}}" alt="{{.ALT}}">
+                    </a>
+                </div>
+            {{end}}
             </div>
         </div>
-
-        <h5 style="text-align: center;" class="sponsec"><span class="sponsor-bronze"><b>Security Analyst
-                    Sponsor</b></span></h5>
-
-        <div class="row justify-content-evenly">
-
-            <div class="d-flex justify-content-evenly">
-                <a href="https://www.securityinnovation.com/">
-                    <img class="img-fluid" src="img/security_innovation_logo.png" alt="Security Innovation"
-                        width="300">
-                </a>
-            </div>
-            <div class="d-flex justify-content-evenly">
-                <a href="https://contrastsecurity.com/">
-                    <img class="img-fluid" src="img/Contrast_Security_logo.png" alt="Contrast Security">
-                </a>
-            </div>
-
-
-        </div>
-
     </div>
 </div>
 {{end}}

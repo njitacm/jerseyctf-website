@@ -11,6 +11,36 @@
 .title-info{
     color: white;
 }
+
+
+/* Sponsor Section*/
+.sponsec {
+    margin-top: 5%; 
+    margin-bottom: 4%;
+}
+
+.sponlogos {
+    padding: 7px;
+    width: auto;
+    height: 150px;
+}
+
+[class*="sponsor-"] {
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sponsor-gold {  background-color: #f5de33; }
+.sponsor-silver { background-color: #b9c1c9; }
+.sponsor-bronze { background-color: #bd9939; }
+.sponsor-thanks { background-color: #f53d3d; }
+.centralize{
+    margin: auto;    
+    display: block;
+}
+
+/* Footer Section */
 .foots {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
@@ -23,38 +53,3 @@
     padding: 8px 15px 5px 15px;
     height: 70px;
 }
-
-/* Sponsor Section*/
-.sponsec {
-    margin-top: 1%; 
-    margin-bottom: 2%;
-}
-
-.sponlogos {
-    padding: 7px;
-    height: 150px;
-}
-
-[class*="sponsor-"] {
-    /* padding-top: 1%;
-    padding-bottom: 1%;
-    padding-right: 25%;
-    padding-left: 25%; */
-    font-size: larger;
-    text-align: center;
-}
-
-.sponsor-gold {  background-color: #f5de33; }
-.sponsor-silver { background-color: #b9c1c9; }
-.sponsor-bronze { background-color: #bd9939; }
-.sponsor-thanks { background-color: #f53d3d; }
-.centralize{
-    margin: auto;    
-    display: block;
-}
-/* .jerctf {
-    padding: 20px;
-    background-color: #3485fe;
-    color: white;
-} */
-

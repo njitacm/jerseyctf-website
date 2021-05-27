@@ -36,6 +36,8 @@ func index(w http.ResponseWriter, r *http.Request) {
 	// speakers in speakers.html
 
 	// sponsors in sponsors.html
+	sponsors := L.GetSponsors()
+	tmpl.ExecuteTemplate(w, "sponsors", sponsors)
 
 	// faq in faq.html
 	faq := L.GetFaq()
