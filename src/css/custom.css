@@ -4,25 +4,15 @@
     color: #fd0000;
 }
 
-.faq-question {
-    color: #c91d05;
-}
-
 .title-info{
     color: white;
 }
 
 
-/* Sponsor Section*/
+/* Sponsor Section */
 .sponsec {
     margin-top: 5%; 
     margin-bottom: 4%;
-}
-
-.sponlogos {
-    padding: 7px;
-    width: auto;
-    height: 150px;
 }
 
 [class*="sponsor-"] {
@@ -38,6 +28,11 @@
 .centralize{
     margin: auto;    
     display: block;
+}
+
+/* FAQ Section */
+.faq-question {
+    color: #c91d05;
 }
 
 /* Footer Section */

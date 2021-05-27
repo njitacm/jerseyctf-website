@@ -34,6 +34,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "schedule", nil)
 
 	// speakers in speakers.html
+	tmpl.ExecuteTemplate(w, "speakers", nil)
 
 	// sponsors in sponsors.html
 	sponsors := L.GetSponsors()
@@ -41,10 +42,10 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 	// faq in faq.html
 	faq := L.GetFaq()
-
 	tmpl.ExecuteTemplate(w, "faq", faq)
 
 	// recongitions in recognitions.html
+	L.Recognition(w, tmpl)
 
 	// Footer Template in Layout.html
 	tmpl.ExecuteTemplate(w, "footer", nil)
