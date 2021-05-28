@@ -10,6 +10,12 @@ type Person struct {
 	Sector string
 }
 
+// Copy and Paste Add
+// {
+// 	Name: "",
+// 	Sector: "",
+// },
+
 func GetRecognizedPeople() []Person {
 	return []Person{
 		{
@@ -47,12 +53,7 @@ func GetRecognizedPeople() []Person {
 	}
 }
 
-// Copy
-// {
-// 	Name: "",
-// 	Sector: "",
-// },
-
+// Handles the Recognition Tab and Writes to Website
 func Recognition(w http.ResponseWriter, tpl *template.Template) {
 	recognitions := GetRecognizedPeople()
 

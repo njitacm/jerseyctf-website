@@ -34,7 +34,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "schedule", nil)
 
 	// speakers in speakers.html
-	tmpl.ExecuteTemplate(w, "speakers", nil)
+	L.Speaker(w, tmpl)
 
 	// sponsors in sponsors.html
 	sponsors := L.GetSponsors()
@@ -55,8 +55,10 @@ func index(w http.ResponseWriter, r *http.Request) {
 func main() {
 	port := strconv.Itoa(PORT)
 
+	// Web Server starts at this directory
 	fs := http.FileServer(http.Dir("."))
 
+	// Puts everything from File Server into a /assets/ directory
 	http.Handle("/assets/", http.StripPrefix("/assets", fs))
 
 	http.HandleFunc("/", index)
