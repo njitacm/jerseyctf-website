@@ -1,0 +1,29 @@
+{{- /* <!-- Anything with  *-start needs a *-div-end --> */ -}}
+
+{{block "speaker-start" .}}
+<div id="speakers" class="row justify-content-evenly">
+    <h4 class="jerctf">@speakers</h4>
+{{end}}
+
+
+{{block "speaker-card-group-start" .}}
+<div class="card-group" style="padding: 1rem;">
+{{end}}
+
+
+{{block "speaker-card" .}}
+<div class="card" style="padding: 1rem;">
+    <img src="/assets/img/{{.Pic}}" class="card-img-top" alt="{{.Name}}">
+    <div class="card-body">
+        <h5 style="font-weight: bold;" class="card-title">{{.Name}}</h5>
+        <p class="card-text">{{.Position}}</p>
+        <p class="card-text">Speaker Topic: <i>{{.Role}}</i></p>
+        <a href="https://www.linkedin.com/in/{{.LinkedIn}}/" class="btn btn-primary">LinkedIn</a>
+    </div>
+</div>
+{{end}}
+
+
+{{block "speaker-div-end" .}}
+</div>
+{{end}}

@@ -1,0 +1,50 @@
+.jerctf {
+    padding: 15px;
+    background-color: #2c2c2c;
+    color: #fd0000;
+}
+
+.title-info{
+    color: white;
+}
+
+
+/* Sponsor Section */
+.sponsec {
+    margin-top: 5%; 
+    margin-bottom: 4%;
+}
+
+[class*="sponsor-"] {
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sponsor-gold {  background-color: #f5de33; }
+.sponsor-silver { background-color: #b9c1c9; }
+.sponsor-bronze { background-color: #bd9939; }
+.sponsor-thanks { background-color: #f53d3d; }
+.centralize{
+    margin: auto;    
+    display: block;
+}
+
+/* FAQ Section */
+.faq-question {
+    color: #c91d05;
+}
+
+/* Footer Section */
+.foots {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    text-align: center;
+}
+
+.foots-img {
+    padding: 8px 15px 5px 15px;
+    height: 70px;
+}

@@ -1,0 +1,81 @@
+{{block "header" .}}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/custom.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <title>JerseyCTF</title>
+    <!-- Favicon at the top (in the tab) -->
+    <link rel="shortcut icon" type="image/jpg" href="/assets/img/lock1.png" />
+</head>
+{{end}}
+
+
+{{block "navNBody" .}}
+<body style="font-family: 'Montserrat', sans-serif;">
+    <!-- JavaScript Bundle with Popper  (For Bootstrap)-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Navbar:: to move around the site a bit better -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
+
+        <div class="container-fluid">
+            <a href="#" > <img src="/assets/img/Title_Only.png" class="navbar-brand" width="150" height="50"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    {{range .}}
+                        <a class="nav-link" href="#{{.}}">{{.}}</a>
+                    {{end}}
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" data-bs-spy="scroll" data-bs-target="#" data-bs-offset="10"
+    tabindex="0">
+{{end}}
+
+{{block "footer" .}}
+</div> {{- /*<!-- To close div from before ^ ^ ^-->*/ -}}
+<div id="foots">
+    <footer class="foots">
+        <div class="col">
+            JerseyCTF is hosted by
+        </div>
+        <div class="col">
+            <a href="https://njit.acm.org"><img class="img-fluid foots-img" src="/assets/img/white_hollow_acm.png"
+                    alt="NJIT ACM Logo"></a>
+            <a href="https://csnp.org"><img class="img-fluid foots-img" src="/assets/img/csnp_hollow.png"
+                    alt="CSNP Logo"></a>
+            <br>
+            <a href="https://computing.njit.edu/"><img class="img-fluid foots-img" src="/assets/img/njit_logo.png"
+                    alt="NJIT Logo"></a>
+            <br>
+            <p><a
+                    href="https://docs.google.com/document/d/1KvOADKuuKq0a603JKxUVTBYmR52cqs0zNyIbrAyTIdw/edit#heading=h.d6zlar4e9q8n">Code
+                    of Conduct & Privacy Policy</a></p>
+        </div>
+    </footer>
+</div>
+</body>
+<!-- Site template done by Sig•Mal -->
+</html>
+{{end}}

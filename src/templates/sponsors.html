@@ -1,0 +1,56 @@
+{{block "sponsors" .}}
+<div id="sponsors" class="row justify-content-evenly">
+    <h4 class="jerctf">@sponsors</h4>
+
+    <div class="col text-center">
+        <h5 class="sponsec"><span class="sponsor-gold">Title Sponsor</span>
+        </h5>
+        <div class="row justify-content-evenly">
+            
+            <div class="col-6 col-sm-5 col-lg-3"> 
+            {{range .Gold}}
+            
+                <div class="d-flex justify-content-evenly">
+                    <a href="{{.HREF}}">
+                        <img class="img-fluid" src="/assets/img/{{.SrcFile}}" alt="{{.ALT}}">
+                    </a>
+                </div>
+            {{end}}
+            </div>
+        </div>
+
+        <h5 class="sponsec"><span class="sponsor-silver">CISO Sponsor</span>
+        </h5>
+        
+        <div class="row justify-content-evenly">
+
+            <div class="col-6 col-sm-5 col-lg-3">
+            {{range .Silver}}
+                <div class="d-flex justify-content-evenly">
+                    <a href="{{.HREF}}">
+                        <img class="img-fluid" src="/assets/img/{{.SrcFile}}" alt="{{.ALT}}">
+                    </a>
+                </div>
+            {{end}}
+            </div>
+
+        </div>
+
+        <h5 class="sponsec"><span class="sponsor-bronze">Security Analyst
+                    Sponsor</span></h5>
+
+        <div class="row justify-content-evenly">
+
+            <div class="col-6 col-sm-5 col-lg-3">
+            {{range .Bronze}}
+                <div class="d-flex justify-content-evenly">
+                    <a href="{{.HREF}}">
+                        <img class="img-fluid" src="/assets/img/{{.SrcFile}}" alt="{{.ALT}}">
+                    </a>
+                </div>
+            {{end}}
+            </div>
+        </div>
+    </div>
+</div>
+{{end}}

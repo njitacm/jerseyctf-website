@@ -1,0 +1,26 @@
+{{- /* <!-- Anything with  *-start needs a *-div-end --> */ -}}
+
+{{block "recognition-start" .}}
+<div id="recognitions" class="row justify-content-evenly">
+    <h4 class="jerctf">@recognitions</h4>
+{{end}}
+
+
+{{block "recognition-card-group-start" .}}
+<div class="card-group" style="padding-bottom: 7px;"> 
+{{end}}
+
+
+{{block "recognition-card" .}}
+<div class="card text-center">
+    <div class="card-body">
+        <h5 style="font-weight: bold;" class="card-title">{{.Name}}</h5>
+        <p class="card-text">{{.Sector}}</p>
+    </div>
+</div>
+{{end}}
+
+
+{{block "recognition-div-end" .}}
+</div>
+{{end}}
