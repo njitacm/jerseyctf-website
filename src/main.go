@@ -15,13 +15,16 @@ const (
 )
 
 func index(w http.ResponseWriter, r *http.Request) {
+	// This ensures that all *.html within the templates/ dir and their
+	// specific template are received before called
 	tmpl := template.Must(template.ParseGlob("templates/*.html"))
 
 	// Header Template in Layout.html
 	tmpl.ExecuteTemplate(w, "header", nil)
 
 	// Nav Bar Template in Layout.html
-	navBar := []string{"registration", "schedule", "speakers", "sponsors", "faq", "recognitions"}
+	navBar := []string{"registration", "schedule", "speakers", "sponsors",
+		"faq", "recognitions", "writeups"}
 	tmpl.ExecuteTemplate(w, "navNBody", navBar)
 
 	// Infographic in Infographic.html
@@ -46,6 +49,10 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 	// recongitions in recognitions.html
 	L.Recognition(w, tmpl)
+
+	// writeups in writeups.html
+	writeups := L.GetWriteups()
+	tmpl.ExecuteTemplate(w, "writeups", writeups)
 
 	// Footer Template in Layout.html
 	tmpl.ExecuteTemplate(w, "footer", nil)
