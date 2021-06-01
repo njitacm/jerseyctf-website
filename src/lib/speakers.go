@@ -5,6 +5,12 @@ import (
 	"text/template"
 )
 
+// Segment Number refers to how one wishes to break down
+// cards
+const (
+	SEGMENT_NUM = 5
+)
+
 type SpeakerStruct struct {
 	Pic      string
 	Name     string
@@ -133,7 +139,7 @@ func Speaker(w http.ResponseWriter, tpl *template.Template) {
 	}
 
 	// Creates 2 card groups, split by using some integer division
-	if length <= 12 {
+	if length <= 12 && length >= 6 {
 
 		// First Group of Speakers (Speakers[0: length/2])
 		tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
@@ -157,8 +163,6 @@ func Speaker(w http.ResponseWriter, tpl *template.Template) {
 
 	// Creates a dynamic grid
 	if length > 12 {
-
-		segmentNum := 5
 		var iter int
 
 		for idx, speaker := range speakers {
@@ -166,13 +170,13 @@ func Speaker(w http.ResponseWriter, tpl *template.Template) {
 			iter++
 
 			j := idx + 1
-			if j%segmentNum == 1 {
+			if j%SEGMENT_NUM == 1 {
 				tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
 			}
 
 			tpl.ExecuteTemplate(w, "speaker-card", speaker)
 
-			if iter%segmentNum == 0 {
+			if iter%SEGMENT_NUM == 0 {
 				tpl.ExecuteTemplate(w, "speaker-div-end", nil)
 			}
 		}

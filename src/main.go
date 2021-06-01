@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"text/template"
 
-	L "github.com/njitacm/jerseyctf-registration-site/src/lib"
+	L "github.com/njitacm/jerseyctf-website/src/lib"
 )
 
 // CONSTANT

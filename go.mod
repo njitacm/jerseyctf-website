@@ -1,3 +1,3 @@
-module github.com/njitacm/jerseyctf-registration-site
+module github.com/njitacm/jerseyctf-website
 
 go 1.16
