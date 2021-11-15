@@ -13,6 +13,17 @@ type Sponsors struct {
 	Bronze []Sponsor
 }
 
+/*
+For the Sponsors You have to segment the the categories between:
+- Gold
+- Silver
+- Bronze
+
+Each Category Segment belongs to a separate component so unfortunately
+they can't combined
+
+*/
+
 func GetSponsors() Sponsors {
 	gold := []Sponsor{
 		{

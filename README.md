@@ -4,11 +4,11 @@ NJITACM's Website for Registration and Information on the JerseyCTF event
 
 <!-- NJIT ACM LOGO -->
 <p align="center">
-    <img src="https://raw.githubusercontent.com/NJIT-ACM/NJIT-ACM/main/ACMLOGO.png" alt="" data-canonical-src="" width="400" height="400">
+    <img src="https://raw.githubusercontent.com/NJIT-ACM/NJIT-ACM/main/ACMLOGO.png" alt="NJIT ACM Logo" data-canonical-src="" width="400">
 </p>
 
 ## Technical Details
-* A dynamic site that uses HTML templates, from the `go` standard library 
+* A dynamic site that uses HTML templates, from the **`go`** standard library 
 * The back-end (web server) is written in **golang-go**
 * The front-end is written using **Bootstrapv5**
 
