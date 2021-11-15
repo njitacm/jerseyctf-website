@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"log"
 	"net/http"
 	"strconv"
@@ -61,6 +62,8 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	port := strconv.Itoa(PORT)
+
+	fmt.Printf("Starting server on http://localhost:%s\n", port)
 
 	// Web Server starts at this directory
 	fs := http.FileServer(http.Dir("."))

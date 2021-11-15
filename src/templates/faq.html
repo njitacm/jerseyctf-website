@@ -1,11 +1,9 @@
 {{block "faq" .}}
 <div id="faq" class="row">
     <h4 class="jerctf">@faq</h4>
-
     {{range .}}
         <h5 class="faq-question">{{.Question}}</h5>
         <p>{{.Answer}}</p>
     {{end}}
-    
 </div>
 {{end}}

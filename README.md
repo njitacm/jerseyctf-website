@@ -3,7 +3,9 @@
 NJITACM's Website for Registration and Information on the JerseyCTF event
 
 <!-- NJIT ACM LOGO -->
-![](https://raw.githubusercontent.com/NJIT-ACM/NJIT-ACM/main/ACMLOGO.png)
+<p style="text-align:center;">
+    <img src="https://raw.githubusercontent.com/NJIT-ACM/NJIT-ACM/main/ACMLOGO.png" alt="" data-canonical-src="" width="400" height="400">
+</p>
 
 ## Technical Details
 * A dynamic site that uses HTML templates, from the `go` standard library 
