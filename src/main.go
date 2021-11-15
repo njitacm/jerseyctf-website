@@ -25,7 +25,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 	// Nav Bar Template in Layout.html
 	navBar := []string{"registration", "schedule", "speakers", "sponsors",
-		"faq", "recognitions", "writeups"}
+		"faq", "recognitions", "resources"}
 	tmpl.ExecuteTemplate(w, "navNBody", navBar)
 
 	// Infographic in Infographic.html
@@ -53,7 +53,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 	// writeups in writeups.html
 	writeups := L.GetWriteups()
-	tmpl.ExecuteTemplate(w, "writeups", writeups)
+	tmpl.ExecuteTemplate(w, "resources", writeups)
 
 	// Footer Template in Layout.html
 	tmpl.ExecuteTemplate(w, "footer", nil)
