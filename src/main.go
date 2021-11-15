@@ -22,7 +22,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "header", nil)
 
 	// Nav Bar Template in Layout.html
-	navBar := []string{"registration", "schedule", "speakers", "sponsors",
+	navBar := []string{"registration", "speakers", "sponsors",
 		"faq", "recognitions", "resources"}
 	tmpl.ExecuteTemplate(w, "navNBody", navBar)
 
@@ -33,7 +33,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "registration", nil)
 
 	// schedule in schedule.html
-	tmpl.ExecuteTemplate(w, "schedule", nil)
+	// tmpl.ExecuteTemplate(w, "schedule", nil)
 
 	// speakers in speakers.html
 	L.Speaker(w, tmpl)

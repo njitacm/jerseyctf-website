@@ -14,7 +14,7 @@ func GetFaq() []Faq {
 		},
 		{
 			Question: "When and where is JerseyCTF?",
-			Answer:   "JerseyCTF will be virtually hosted on Discord. The competition will be on April 10th-11th, 2021!",
+			Answer:   "TBD",
 		},
 		{
 			Question: "Who can sign up to compete?",
