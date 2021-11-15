@@ -3,13 +3,6 @@
     <h4 class="jerctf">@resources</h4>
     <div class="card text-center" style="padding: 2%; margin-bottom: 1%;">
         <table class="table table-hover table-dark table-striped">
-            <!-- <thead>
-                    <tr>
-                        <th scope="col">Year</th>
-                        <th scope="col">Writeups</th>
-                        <th scope="col">Youtube Playlist</th>
-                    </tr>
-                </thead> -->
             <tbody>
                 {{range .}}
                 <tr>
@@ -20,14 +13,6 @@
                 {{end}}
             </tbody>
         </table>
-        <!-- <div class="card-header">Writeups / Challenges</div>
-        <div class="card-body">
-            <ul class="list-group list-group-flush">
-                {{range .}}
-                    <li class="list-group-item"><a href="{{.Writeups}}" target="_blank">{{.Year}}</a></li>
-                {{end}}
-            </ul>
-        </div> -->
         <div class="card-footer">If links above are inaccesible: Check <a
                 href="https://github.com/njitacm/ctf-challenges">here</a>.</div>
     </div>

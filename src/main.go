@@ -11,9 +11,7 @@ import (
 )
 
 // CONSTANT
-const (
-	PORT = 9990
-)
+const PORT = 9990
 
 func index(w http.ResponseWriter, r *http.Request) {
 	// This ensures that all *.html within the templates/ dir and their

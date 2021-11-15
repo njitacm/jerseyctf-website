@@ -8,8 +8,9 @@ type Resource struct {
 
 // Copy and Paste Add
 // {
-// 	Link: "",
-// 	Year: "",
+// 	Year:     "2022",
+// 	Writeups: "#",
+// 	Playlist: "#",
 // },
 
 // Returns an Array of Writeups for usage throughout program
