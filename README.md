@@ -12,6 +12,24 @@ NJITACM's Website for Registration and Information on the JerseyCTF event
 * The back-end (web server) is written in **golang-go**
 * The front-end is written using **Bootstrapv5**
 
+## Usage
+```bash
+# To test JCTF site locally
+# Required: go (golang) 
+# Optional: make
+$ git clone https://github.com/njitacm/jerseyctf-website.git
+$ cd jerseyctf-website/src
+$ go build main.go
+# Optionally: use `make`
+-----
+Running:
+# If MacOS / Linux:
+$ ./main  
+# If Windows:
+$ ./main.exe
+- Go to http://localhost:9990
+```
+
 ## Current View of Website
 ![](img/fullsite-jerseyctf.png)
 * Shows the full view of the Website
