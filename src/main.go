@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"html/template"
 	"log"
 	"net/http"
 	"strconv"
@@ -42,7 +43,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 	// sponsors in sponsors.html
 	sponsors := L.GetSponsors()
-	tmpl.ExecuteTemplate(w, "sponsors", sponsors)
+	tmpl.ExecuteTemplate(w, "sponsors-new", sponsors)
 
 	// faq in faq.html
 	faq := L.GetFaq()
