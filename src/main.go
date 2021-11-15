@@ -52,8 +52,8 @@ func index(w http.ResponseWriter, r *http.Request) {
 	L.Recognition(w, tmpl)
 
 	// writeups in writeups.html
-	writeups := L.GetWriteups()
-	tmpl.ExecuteTemplate(w, "resources", writeups)
+	resources := L.GetResources()
+	tmpl.ExecuteTemplate(w, "resources", resources)
 
 	// Footer Template in Layout.html
 	tmpl.ExecuteTemplate(w, "footer", nil)
