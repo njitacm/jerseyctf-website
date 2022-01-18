@@ -22,8 +22,8 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "header", nil)
 
 	// Nav Bar Template in Layout.html
-	navBar := []string{"registration", "speakers", "sponsors",
-		"faq", "recognitions", "resources"}
+	navBar := []string{"Registration", "Speakers", "Sponsors",
+		"FAQ", "Recognitions", "Resources"}
 	tmpl.ExecuteTemplate(w, "navNBody", navBar)
 
 	// Infographic in Infographic.html

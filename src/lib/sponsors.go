@@ -26,12 +26,7 @@ they can't combined
 
 func GetSponsors() Sponsors {
 	gold := []Sponsor{
-		{
-			HREF:   "https://specterops.io/",
-			Source: "Specter_ops_logo.png",
-			ALT:    "Specter Ops",
-			Width:  "400",
-		},
+
 		{
 			HREF:   "https://www.cyber.nj.gov/",
 			Source: "NJCCIC_logo.png",
