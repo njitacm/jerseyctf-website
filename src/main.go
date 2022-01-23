@@ -22,8 +22,8 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "header", nil)
 
 	// Nav Bar Template in Layout.html
-	navBar := []string{"Registration", "Speakers", "Sponsors",
-		"FAQ", "Recognitions", "Resources"}
+	//navBar := []string{"Registration", "Speakers", "Sponsors","FAQ", "Recognitions", "Resources"}
+	navBar := []string{"Registration","FAQ", "Resources"}
 	tmpl.ExecuteTemplate(w, "navNBody", navBar)
 
 	// Infographic in Infographic.html
@@ -36,18 +36,18 @@ func index(w http.ResponseWriter, r *http.Request) {
 	// tmpl.ExecuteTemplate(w, "schedule", nil)
 
 	// speakers in speakers.html
-	L.Speaker(w, tmpl)
+	//L.Speaker(w, tmpl)
 
 	// sponsors in sponsors.html
-	sponsors := L.GetSponsors()
-	tmpl.ExecuteTemplate(w, "sponsors", sponsors)
+	//sponsors := L.GetSponsors()
+	//tmpl.ExecuteTemplate(w, "sponsors", sponsors)
 
 	// faq in faq.html
 	faq := L.GetFaq()
 	tmpl.ExecuteTemplate(w, "faq", faq)
 
 	// recongitions in recognitions.html
-	L.Recognition(w, tmpl)
+	//L.Recognition(w, tmpl)
 
 	// writeups in writeups.html
 	resources := L.GetResources()

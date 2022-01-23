@@ -10,15 +10,15 @@ func GetFaq() []Faq {
 	return []Faq{
 		{
 			Question: "What is JerseyCTF?",
-			Answer:   "JerseyCTF is a beginner-friendly CTF, meant to get people interested in security. The competition is open to anyone, so we will make sure to provide a range of challenge difficulties.",
-		},
-		{
-			Question: "When and where is JerseyCTF?",
-			Answer:   "TBD",
+			Answer:   "JerseyCTF is a beginner-friendly Capture the Flag competition that aims to inspire interest in cybersecurity. Hosted by the <a href=https://njit.acm.org>NJIT ACM</a> organization and <a href=https://sci.njit.edu>NJIT SCI</a> program, it is geared towards students, beginners, and professionals alike. JerseyCTF provides participants with jeopardy-style questions in categories including cryptography, forensics, binary exploitation/reversing, open-source intelligence, and web exploitation.",
 		},
 		{
 			Question: "Who can sign up to compete?",
 			Answer:   "Students, beginners, and professionals are all welcome to compete as long as they are over the age of 18.",
+		},
+		{
+			Question: "What do I need to compete?",
+			Answer:   "All you need is an Internet-connected device in order to compete. It is completely optional if you want to use ethical hacking/penetration testing Linux distributions like Kali or Parrot OS, but these may help you since there are many pre-installed tools. These distributions are open-source and can be deployed in VMware, VirtualBox, or any other virtualization software.",
 		},
 		{
 			Question: "Will there be prizes?",
@@ -26,7 +26,7 @@ func GetFaq() []Faq {
 		},
 		{
 			Question: "How big is JerseyCTF?",
-			Answer:   "Space is limited, so we will be capping the competition at a maximum of 125 teams or 500 people.",
+			Answer:   "JerseyCTF had over 600 registrations in 2021, the first year of the competition. We are looking forward to welcoming more registrants and participants in 2022!",
 		},
 		{
 			Question: "Do I have to pay to compete in JerseyCTF?",
