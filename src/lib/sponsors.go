@@ -1,5 +1,11 @@
 package lib
 
+type Tier struct {
+	Spons []Sponsor
+	TierName string
+	CSSName string
+}
+
 type Sponsor struct {
 	HREF   string
 	Source string
@@ -8,23 +14,8 @@ type Sponsor struct {
 }
 
 type Sponsors struct {
-	Title []Sponsor
-	CISO   []Sponsor
-	Manager []Sponsor
-	Analyst []Sponsor
+	AllTiers []Tier
 }
-
-/*
-For the Sponsors You have to segment the the categories between:
-- Title
-- CISO
-- Security Manager
-- Security Analyst
-
-Each Category Segment belongs to a separate component so unfortunately
-they can't combined
-
-*/
 
 func GetSponsors() Sponsors {
 	title := []Sponsor{
@@ -68,11 +59,31 @@ func GetSponsors() Sponsors {
 			Width:  "300",
 		},
 	}
+		
+	tiers := []Tier{
+		{
+			Spons: title,
+			TierName: "Title Sponsor",
+			CSSName: "sponsor-title",
+		},
+		{
+			Spons: ciso,
+			TierName: "CISO Sponsor",
+			CSSName: "sponsor-ciso",
+		},
+		{
+			Spons: manager,
+			TierName: "Security Manager Sponsor",
+			CSSName: "sponsor-manager",
+		},
+		{
+			Spons: analyst,
+			TierName: "Security Analyst Sponsor",
+			CSSName: "sponsor-analyst",
+		},
+	}
 
 	return Sponsors{
-		Title: title,
-		CISO: ciso,
-		Manager: manager,
-		Analyst: analyst,
+		AllTiers: tiers,
 	}
 }

@@ -2,54 +2,20 @@
 <div id="Sponsors" class="row justify-content-evenly">
     <h4 class="jerctf">@sponsors</h4>
     <div class="col text-center">
-        <h5 class="sponsec"><span class="sponsor-title">Title Sponsor</span></h5>
+    {{range .AllTiers}}
+        <h5 class="sponsec"><span class="{{.CSSName}}">{{.TierName}}</span></h5>
         <div class="row justify-content-evenly">
             <div class="col-6 col-sm-5 col-lg-3"> 
-            {{range .Title}}
+            {{range .Spons}}
                 <div class="d-flex justify-content-evenly">
-                    <a href="{{.HREF}}">
+                    <a target="_blank" href="{{.HREF}}">
                         <img class="img-fluid" src="/assets/img/sponsor/{{.Source}}" alt="{{.ALT}}" width="{{.Width}}">
                     </a>
                 </div>
             {{end}}
             </div>
         </div>
-        <h5 class="sponsec"><span class="sponsor-ciso">CISO Sponsor</span></h5>
-        <div class="row justify-content-evenly">
-            <div class="col-6 col-sm-5 col-lg-3"> 
-            {{range .CISO}}
-                <div class="d-flex justify-content-evenly">
-                    <a href="{{.HREF}}">
-                        <img class="img-fluid" src="/assets/img/sponsor/{{.Source}}" alt="{{.ALT}}" width="{{.Width}}">
-                    </a>
-                </div>
-            {{end}}
-            </div>
-        </div>
-        <h5 class="sponsec"><span class="sponsor-manager">Security Manager Sponsor</span></h5>
-        <div class="row justify-content-evenly">
-            <div class="col-6 col-sm-5 col-lg-3">
-            {{range .Manager}}
-                <div class="d-flex justify-content-evenly">
-                    <a href="{{.HREF}}">
-                        <img class="img-fluid" src="/assets/img/sponsor/{{.Source}}" alt="{{.ALT}}" width="{{.Width}}">
-                    </a>
-                </div>
-            {{end}}
-            </div>
-        </div>
-        <h5 class="sponsec"><span class="sponsor-analyst">Security Analyst Sponsor</span></h5>
-        <div class="row justify-content-evenly">
-            <div class="col-6 col-sm-5 col-lg-3">
-            {{range .Analyst}}
-                <div class="d-flex justify-content-evenly">
-                    <a href="{{.HREF}}">
-                        <img class="img-fluid" src="/assets/img/sponsor/{{.Source}}" alt="{{.ALT}}" width="{{.Width}}">
-                    </a>
-                </div>
-            {{end}}
-            </div>
-        </div>
+    {{end}}
     </div>
 </div>
 {{end}}
