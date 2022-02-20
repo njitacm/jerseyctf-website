@@ -1,6 +1,6 @@
 [![Go](https://github.com/njitacm/jerseyctf-registration-site/actions/workflows/go.yml/badge.svg)](https://github.com/njitacm/jerseyctf-registration-site/actions/workflows/go.yml)
 # jerseyctf-website
-NJITACM's Website for Registration and Information on the JerseyCTF event.
+NJIT ACM's website for registration and information on the JerseyCTF event.\
 [jerseyctf.com](https://jerseyctf.com/)
 
 <!-- NJIT ACM LOGO -->
