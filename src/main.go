@@ -33,14 +33,14 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "registration", nil)
 
 	// schedule in schedule.html
-	// tmpl.ExecuteTemplate(w, "schedule", nil)
+	//tmpl.ExecuteTemplate(w, "schedule", nil)
 
 	// speakers in speakers.html
 	//L.Speaker(w, tmpl)
 
 	// sponsors in sponsors.html
-	//sponsors := L.GetSponsors()
-	//tmpl.ExecuteTemplate(w, "sponsors", sponsors)
+	sponsors := L.GetSponsors()
+	tmpl.ExecuteTemplate(w, "sponsors", sponsors)
 
 	// faq in faq.html
 	faq := L.GetFaq()
