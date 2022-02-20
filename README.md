@@ -1,6 +1,7 @@
 [![Go](https://github.com/njitacm/jerseyctf-registration-site/actions/workflows/go.yml/badge.svg)](https://github.com/njitacm/jerseyctf-registration-site/actions/workflows/go.yml)
 # jerseyctf-website
 NJITACM's Website for Registration and Information on the JerseyCTF event.
+[jerseyctf.com](https://jerseyctf.com/)
 
 <!-- NJIT ACM LOGO -->
 <p align="center">
@@ -29,10 +30,6 @@ $ ./main
 $ ./main.exe
 - Go to http://localhost:9990
 ```
-
-## Current View of Website
-![](img/fullsite-jerseyctf.png)
-* Shows the full view of the Website
 
 ## Purpose
 * Made to be deployed onto a Droplet (cloud server on DigitalOcean) easily
