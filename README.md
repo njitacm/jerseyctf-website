@@ -2,7 +2,7 @@
 # jerseyctf-website
 
 
-NJIT ACM's website for registration and information on the JerseyCTF event. (<a href="http://jerseyctf.com/" target="_blank">jerseyctf.com</a>)
+NJIT ACM's website for registration and information on the JerseyCTF event. ([jerseyctf.com](https://jerseyctf.com/))
 
 
 <!-- NJIT ACM LOGO -->
