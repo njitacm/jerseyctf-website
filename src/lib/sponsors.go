@@ -29,38 +29,32 @@ func GetSponsors() Sponsors {
 
 		{
 			HREF:   "https://www.cyber.nj.gov/",
-			Source: "NJCCIC_logo.png",
-			ALT:    "NJCCIC",
-			Width:  "200",
+			Source: "gemini_logo.png",
+			ALT:    "Gemini",
+			Width:  "350",
 		},
 	}
 
 	silver := []Sponsor{
 		{
 			HREF:   "https://www.digitalocean.com/",
-			Source: "DO_Logo.png",
-			ALT:    "Digital Ocean",
-			Width:  "250",
+			Source: "palo_alto_logo.png",
+			ALT:    "Palo Alto Networks",
+			Width:  "350",
 		},
 		{
 			HREF:   "https://www.knowbe4.com/",
-			Source: "KnowBe4_logo.png",
-			ALT:    "KnowBe4",
-			Width:  "300",
+			Source: "google_logo.gif",
+			ALT:    "Google",
+			Width:  "200",
 		},
 	}
 
 	bronze := []Sponsor{
 		{
 			HREF:   "https://www.securityinnovation.com/",
-			Source: "security_innovation_logo.png",
-			ALT:    "Security Innovation",
-			Width:  "300",
-		},
-		{
-			HREF:   "https://contrastsecurity.com/",
-			Source: "Contrast_Security_logo.png",
-			ALT:    "Contrast Security",
+			Source: "njit_sci_logo.png",
+			ALT:    "NJIT SCI",
 			Width:  "300",
 		},
 	}
