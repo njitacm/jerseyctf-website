@@ -22,7 +22,7 @@ func GetFaq() []Faq {
 		},
 		{
 			Question: "Will there be prizes?",
-			Answer:   "Yes! There are 2 leaderboard divisions: Student and Open. Prizes will be awarded in both divisions for top scoring teams, and anyone who checks-in will receive a complimentary JerseyCTF t-shirt!",
+			Answer:   "Yes! There are 2 leaderboard divisions: Student and Open. Prizes will be awarded in both divisions for top scoring teams and participants residing in the United States will receive a complimentary JerseyCTF t-shirt.",
 		},
 		{
 			Question: "How big is JerseyCTF?",

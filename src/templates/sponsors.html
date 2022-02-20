@@ -2,6 +2,18 @@
 <div id="Sponsors" class="row justify-content-evenly">
     <h4 class="jerctf">@sponsors</h4>
     <div class="col text-center">
+        <h5 class="sponsec"><span class="sponsor-title">Title Sponsor</span></h5>
+        <div class="row justify-content-evenly">
+            <div class="col-6 col-sm-5 col-lg-3"> 
+            {{range .Title}}
+                <div class="d-flex justify-content-evenly">
+                    <a href="{{.HREF}}">
+                        <img class="img-fluid" src="/assets/img/sponsor/{{.Source}}" alt="{{.ALT}}" width="{{.Width}}">
+                    </a>
+                </div>
+            {{end}}
+            </div>
+        </div>
         <h5 class="sponsec"><span class="sponsor-ciso">CISO Sponsor</span></h5>
         <div class="row justify-content-evenly">
             <div class="col-6 col-sm-5 col-lg-3"> 

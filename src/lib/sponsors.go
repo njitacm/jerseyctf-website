@@ -8,6 +8,7 @@ type Sponsor struct {
 }
 
 type Sponsors struct {
+	Title []Sponsor
 	CISO   []Sponsor
 	Manager []Sponsor
 	Analyst []Sponsor
@@ -15,6 +16,7 @@ type Sponsors struct {
 
 /*
 For the Sponsors You have to segment the the categories between:
+- Title
 - CISO
 - Security Manager
 - Security Analyst
@@ -25,6 +27,14 @@ they can't combined
 */
 
 func GetSponsors() Sponsors {
+	title := []Sponsor{
+		{
+			HREF:   "https://www.cyber.nj.gov/",
+			Source: "NJCCIC_logo.png",
+			ALT:    "NJCCIC",
+			Width:  "200",
+		},
+	}
 	ciso := []Sponsor{
 
 		{
@@ -60,7 +70,8 @@ func GetSponsors() Sponsors {
 	}
 
 	return Sponsors{
-		CISO:   ciso,
+		Title: title,
+		CISO: ciso,
 		Manager: manager,
 		Analyst: analyst,
 	}
