@@ -7,14 +7,14 @@
                 {{range .}}
                 <tr>
                     <th>{{.Year}}</th>
-                    <th><a href="{{.Writeups}}">Writeups</a></th>
-                    <th><a href="{{.Playlist}}">Playlist</a></th>
+                    <th><a target="_blank" href="{{.Writeups}}">Writeups</a></th>
+                    <th><a target="_blank" href="{{.Playlist}}">Playlist</a></th>
                 </tr>
                 {{end}}
             </tbody>
         </table>
         <div class="card-footer">If links above are inaccesible: Check <a
-                href="https://github.com/njitacm/ctf-challenges">here</a>.</div>
+            target="_blank" href="https://github.com/njitacm/ctf-challenges">here</a>.</div>
     </div>
 </div>
 {{end}}

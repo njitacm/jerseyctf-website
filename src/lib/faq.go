@@ -10,7 +10,7 @@ func GetFaq() []Faq {
 	return []Faq{
 		{
 			Question: "What is JerseyCTF?",
-			Answer:   "JerseyCTF is a beginner-friendly Capture the Flag competition that aims to inspire interest in cybersecurity. Hosted by the <a href=https://njit.acm.org>NJIT ACM</a> organization and <a href=https://sci.njit.edu>NJIT SCI</a> program, it is geared towards students, beginners, and professionals alike. JerseyCTF provides participants with jeopardy-style questions in categories including cryptography, forensics, binary exploitation/reversing, open-source intelligence, and web exploitation.",
+			Answer:   "JerseyCTF is a beginner-friendly Capture the Flag competition that aims to inspire interest in cybersecurity. Hosted by the <a target=\"_blank\" href=https://njit.acm.org>NJIT ACM</a> organization and <a target=\"_blank\" href=https://sci.njit.edu>NJIT SCI</a> program, it is geared towards students, beginners, and professionals alike. JerseyCTF provides participants with jeopardy-style questions in categories including cryptography, forensics, binary exploitation/reversing, open-source intelligence, and web exploitation.",
 		},
 		{
 			Question: "Who can sign up to compete?",
@@ -38,7 +38,7 @@ func GetFaq() []Faq {
 		},
 		{
 			Question: "You guys haven't answered my question!",
-			Answer:   "Feel free to email us any additional questions and concerns at <a href=\"mailto:jerseyctf@njit.edu\">jerseyctf@njit.edu</a>",
+			Answer:   "Feel free to email us any additional questions and concerns at <a target=\"_blank\" href=\"mailto:jerseyctf@njit.edu\">jerseyctf@njit.edu</a>",
 		},
 	}
 }
