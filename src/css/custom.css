@@ -20,10 +20,10 @@
     font-weight: bold;
 }
 
-.sponsor-gold {  background-color: #f5de33; }
-.sponsor-silver { background-color: #b9c1c9; }
-.sponsor-bronze { background-color: #bd9939; }
-.sponsor-thanks { background-color: #f53d3d; }
+.sponsor-ciso {  background-color: #f5de33; }
+.sponsor-manager { background-color: #b9c1c9; }
+.sponsor-analyst { background-color: #bd9939; }
+
 .centralize{
     margin: auto;    
     display: block;

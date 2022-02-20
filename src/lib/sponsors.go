@@ -8,16 +8,16 @@ type Sponsor struct {
 }
 
 type Sponsors struct {
-	Gold   []Sponsor
-	Silver []Sponsor
-	Bronze []Sponsor
+	CISO   []Sponsor
+	Manager []Sponsor
+	Analyst []Sponsor
 }
 
 /*
 For the Sponsors You have to segment the the categories between:
-- Gold
-- Silver
-- Bronze
+- CISO
+- Security Manager
+- Security Analyst
 
 Each Category Segment belongs to a separate component so unfortunately
 they can't combined
@@ -25,34 +25,34 @@ they can't combined
 */
 
 func GetSponsors() Sponsors {
-	gold := []Sponsor{
+	ciso := []Sponsor{
 
 		{
-			HREF:   "https://www.cyber.nj.gov/",
+			HREF:   "https://www.gemini.com/",
 			Source: "gemini_logo.png",
 			ALT:    "Gemini",
 			Width:  "350",
 		},
 	}
 
-	silver := []Sponsor{
+	manager := []Sponsor{
 		{
-			HREF:   "https://www.digitalocean.com/",
+			HREF:   "https://www.paloaltonetworks.com/",
 			Source: "palo_alto_logo.png",
 			ALT:    "Palo Alto Networks",
 			Width:  "350",
 		},
 		{
-			HREF:   "https://www.knowbe4.com/",
+			HREF:   "https://cloud.google.com/",
 			Source: "google_logo.gif",
 			ALT:    "Google",
 			Width:  "200",
 		},
 	}
 
-	bronze := []Sponsor{
+	analyst := []Sponsor{
 		{
-			HREF:   "https://www.securityinnovation.com/",
+			HREF:   "https://sci.njit.edu/",
 			Source: "njit_sci_logo.png",
 			ALT:    "NJIT SCI",
 			Width:  "300",
@@ -60,8 +60,8 @@ func GetSponsors() Sponsors {
 	}
 
 	return Sponsors{
-		Gold:   gold,
-		Silver: silver,
-		Bronze: bronze,
+		CISO:   ciso,
+		Manager: manager,
+		Analyst: analyst,
 	}
 }
