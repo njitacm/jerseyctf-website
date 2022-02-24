@@ -18,7 +18,7 @@ func GetResources() []Resource {
 	return []Resource{
 		{
 			Year:     "2021",
-			Writeups: "https://github.com/njitacm/ctf-challenges/tree/main/writeups",
+			Writeups: " https://github.com/njitacm/jerseyctf-2021-challenges/tree/main/writeups",
 			Playlist: "https://www.youtube.com/playlist?list=PLrcTWWy-esnDYt1niwIETam5s-nljoeD9",
 		},
 		{

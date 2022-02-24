@@ -10,7 +10,7 @@ func GetFaq() []Faq {
 	return []Faq{
 		{
 			Question: "What is JerseyCTF?",
-			Answer:   "JerseyCTF is a beginner-friendly Capture the Flag competition that aims to inspire interest in cybersecurity. Hosted by the <a target=\"_blank\" href=https://njit.acm.org>NJIT ACM</a> organization and <a target=\"_blank\" href=https://sci.njit.edu>NJIT SCI</a> program, it is geared towards students, beginners, and professionals alike. JerseyCTF provides participants with jeopardy-style questions in categories including cryptography, forensics, binary exploitation/reversing, open-source intelligence, and web exploitation.",
+			Answer:   "JerseyCTF is a beginner-friendly Capture the Flag competition that aims to inspire interest in cybersecurity. Hosted by the <a target=\"_blank\" href=https://njit.acm.org>NJIT ACM</a> organization and <a target=\"_blank\" href=https://sci.njit.edu>NJIT SCI</a> program, it is geared towards students, beginners, and professionals alike. JerseyCTF provides participants with jeopardy-style questions in categories including cryptography, forensics, binary exploitation/reversing, open-source intelligence, and web exploitation.  JerseyCTF features a track parallel to the CTF competition, consisting of presentations and panels with renowned speakers from industry and government.",
 		},
 		{
 			Question: "Who can sign up to compete?",
@@ -34,7 +34,7 @@ func GetFaq() []Faq {
 		},
 		{
 			Question: "Do I have to register as a team?",
-			Answer:   "No! You're welcome to register with your friends and compete with a team, but you can also register by yourself and find a team at the event.",
+			Answer:   "No! You're welcome to register with your friends and compete with a team of up to 4 people, but you can also register by yourself or find a team in the Discord server.",
 		},
 		{
 			Question: "You guys haven't answered my question!",
