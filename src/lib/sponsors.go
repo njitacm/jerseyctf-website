@@ -26,16 +26,10 @@ func GetSponsors() Sponsors {
 			Width:  "200",
 		},
 	}
+	/*
 	ciso := []Sponsor{
-
-		{
-			HREF:   "https://www.gemini.com/",
-			Source: "gemini_logo.png",
-			ALT:    "Gemini",
-			Width:  "350",
-		},
 	}
-
+	*/
 	manager := []Sponsor{
 		{
 			HREF:   "https://www.paloaltonetworks.com/",
@@ -66,11 +60,12 @@ func GetSponsors() Sponsors {
 			TierName: "Title Sponsor",
 			CSSName: "sponsor-title",
 		},
+		/*
 		{
 			Spons: ciso,
 			TierName: "CISO Sponsor",
 			CSSName: "sponsor-ciso",
-		},
+		},*/
 		{
 			Spons: manager,
 			TierName: "Security Manager Sponsor",
