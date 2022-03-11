@@ -7,7 +7,15 @@
 .title-info{
     color: white;
 }
-
+.footnote-info{
+    color:white;
+    margin-top: -10px;
+    font-size: 75%;
+}
+.registText{
+    margin: 10px 20px 20px 20px;
+    text-align: center;
+}
 /* Sponsor Section */
 .sponsec {
     margin-top: 1%; 
