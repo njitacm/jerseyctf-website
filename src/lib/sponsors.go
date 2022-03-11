@@ -52,6 +52,12 @@ func GetSponsors() Sponsors {
 			ALT:    "NJIT SCI",
 			Width:  "300",
 		},
+		{
+			HREF:   "https://www.lutron.com/en-US/pages/default.aspx",
+			Source: "lutron_logo.png",
+			ALT:    "Lutron",
+			Width:  "300",
+		},
 	}
 		
 	tiers := []Tier{
