@@ -43,6 +43,12 @@ func GetSponsors() Sponsors {
 			ALT:    "Google",
 			Width:  "200",
 		},
+		{
+			HREF:   "https://www.crowdstrike.com/",
+			Source: "crowdstrike_logo.png",
+			ALT:    "CrowdStrike",
+			Width:  "350",
+		},
 	}
 
 	analyst := []Sponsor{
