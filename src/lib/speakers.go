@@ -16,7 +16,6 @@ type SpeakerStruct struct {
 	Name     string
 	Position string
 	Role     string
-	LinkedIn string
 }
 
 // Copy and Paste Add
@@ -33,80 +32,51 @@ func GetSpeakers() []SpeakerStruct {
 		{
 			Pic:      "MichaelGeraghty.jpg",
 			Name:     "Michael Geraghty",
-			Position: "CISO, State of New Jersey & Director, NJCCIC",
+			Position: "NJCCIC",//CISO, State of New Jersey & Director, 
 			Role:     "Keynote Speaker",
-			LinkedIn: "michael-geraghty-13139820",
 		},
 		{
-			Pic:      "AbdelSyFane.jpg",
-			Name:     "Abdel Sy Fane",
-			Position: "President, CSNP",
-			Role:     "DevSecOps",
-			LinkedIn: "abdelsyfane",
+			Pic:      "",
+			Name:     "Jon Taylor",
+			Position: "Accenture",
+			Role:     "Keynote Speaker",
+		},{
+			Pic:      "",
+			Name:     "Brian Herron",
+			Position: "FBI", 
+			Role:     "Keynote Speaker",
 		},
 		{
-			Pic:      "GabrielleBotbol.jpg",
-			Name:     "Gabrielle Botbol",
-			Position: "Pentester, CSbyGB",
-			Role:     "Solving Web Security Vulnerabilities with Pentesting",
-			LinkedIn: "gabriellebotbol",
+			Pic:      "",
+			Name:     "Kevin McKenzie",
+			Position: "NJCCIC", 
+			Role:     "Keynote Speaker",
 		},
 		{
-			Pic:      "IlanPonimansky.jpg",
-			Name:     "Ilan Ponimansky",
-			Position: "Sr. Cloud Security Consultant, ScaleSec",
-			Role:     "Cloud Security",
-			LinkedIn: "ilanponimansky",
+			Pic:      "",
+			Name:     "Max Saltonstall",
+			Position: "Google", 
+			Role:     "Keynote Speaker",
 		},
 		{
-			Pic:      "JohnJackson.jpg",
-			Name:     "John Jackson",
-			Position: "Sr. App. Security Engineer, Shutterstock & Founder, Sakura Samurai",
-			Role:     "Day Zero to 0day, Offensive Security Theory",
-			LinkedIn: "johnjhacking",
+			Pic:      "",
+			Name:     "Donnie Rodgers",
+			Position: "PlainDilemma", 
+			Role:     "Keynote Speaker",
 		},
 		{
-			Pic:      "JonHelmus.jpg",
-			Name:     "Jon Helmus",
-			Position: "Offensive Security Educator and Penetration Tester",
-			Role:     "Functional Testing: A New Era of Pentesting",
-			LinkedIn: "jon-helmus-474146103",
+			Pic:      "",
+			Name:     "Debbi Blyth",
+			Position: "CrowdStrike", 
+			Role:     "Keynote Speaker",
 		},
 		{
-			Pic:      "SethKirschner.jpg",
-			Name:     "Seth Kirschner",
-			Position: "Security Engineer & Assistant Vice President, MUFG Securities Americas Inc.",
-			Role:     "Consulting within Big4 Cyber",
-			LinkedIn: "sethkirschner",
+			Pic:      "",
+			Name:     "Oscar Minks",
+			Position: "FRSecure", 
+			Role:     "Keynote Speaker",
 		},
-		{
-			Pic:      "WilliamPrice.png",
-			Name:     "William Price",
-			Position: "President, CyberX",
-			Role:     "Hacking Humans: Using OSINT to Put Together Social Engineering Scenarios that Work",
-			LinkedIn: "cyberxcyecurityspecialistbers",
-		},
-		{
-			Pic:      "JoannaHuisman.jpg",
-			Name:     "Joanna Huisman",
-			Position: "Senior Vice President of Strategic Insights and Research, KnowBe4",
-			Role:     "Driving a Security Culture",
-			LinkedIn: "joannahuisman",
-		},
-		{
-			Pic:      "JosephRusso.jpg",
-			Name:     "Joseph Russo",
-			Position: "Bureau Chief for Cybersecurity Engineering and Operations, NJCCIC",
-			Role:     "Security Telemetry Aggregation and Analysis",
-			LinkedIn: "joe-russo-79358b117",
-		},
-		{
-			Pic:      "HopeWalker.jpg",
-			Name:     "Hope Walker",
-			Position: "Consultant, SpecterOps",
-			Role:     "Icemoon's Fantastical Intro to Offensive Security",
-			LinkedIn: "hope-walker-82398984",
-		},
+	
 	}
 }
 

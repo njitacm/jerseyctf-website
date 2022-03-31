@@ -10,14 +10,22 @@
 <div class="card-group" style="padding-bottom: 7px;"> 
 {{end}}
 
+{{block "recognition-person-list" .}}
+    <div class="col">
+        <ul>
+            {{range .People}}
+            <li>{{.}}</li>
+            {{end}}
+        </ul>
+    </div>
+{{end}}
 
 {{block "recognition-card" .}}
-<div class="card text-center">
+<div class="card d-flex justify-content-center">
     <div class="card-body">
         <h5 style="font-weight: bold;" class="card-title">{{.Name}}</h5>
-        <p class="card-text">{{.Sector}}</p>
-    </div>
-</div>
+        <div class="row">
+
 {{end}}
 
 

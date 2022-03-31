@@ -5,50 +5,29 @@ import (
 	"text/template"
 )
 
-type Person struct {
+type Instit struct {
 	Name   string
-	Sector string
+	People []string
 }
 
-// Copy and Paste Add
-// {
-// 	Name: "",
-// 	Sector: "",
-// },
 
-func GetRecognizedPeople() []Person {
-	return []Person{
+func GetRecognizedPeople() []Instit {
+	return []Instit{
 		{
-			Name:   "Ilan Ponimansky",
-			Sector: "Engineering",
+			Name:"NJIT YWCC Administration and Students:",
+			People:[]string{"Dina","Andres", "Tensei", "Robert", "Nishaant", "Andrew", "George", "Keith", "Sreya"," SCI Principal Investigators", "Logan", "David", "Christian", "Cade", "Alexander", "Massa", "Joseph", "Ethan", "Anthony" },
 		},
 		{
-			Name:   "Robert Bruder",
-			Sector: "Engineering",
+			Name:"NJCCIC Engineers and Interns",
+			People: []string{"Rob", "Mandy", "Kevin", "Penelope", "Edward"},
 		},
 		{
-			Name:   "Amanda Galante",
-			Sector: "Engineering",
+			Name:"RUSEC Members",
+			People: []string{"Rajat", "Philip", "Yousef"},
 		},
 		{
-			Name:   "George Gindler",
-			Sector: "Engineering",
-		},
-		{
-			Name:   "Abdel Sy Fane",
-			Sector: "General Organization",
-		},
-		{
-			Name:   "Toni Diaz",
-			Sector: "Marketing",
-		},
-		{
-			Name:   "Dina Anello",
-			Sector: "Sponsorships",
-		},
-		{
-			Name:   "NJIT ACM E-Board",
-			Sector: "General Organization",
+			Name:"FRSecure Engineers",
+			People: []string{"Eric", "Matt"},
 		},
 	}
 }
@@ -69,8 +48,21 @@ func Recognition(w http.ResponseWriter, tpl *template.Template) {
 		if j%4 == 1 {
 			tpl.ExecuteTemplate(w, "recognition-card-group-start", nil)
 		}
-
 		tpl.ExecuteTemplate(w, "recognition-card", person)
+
+		if len(person.People) <10 {
+			tpl.ExecuteTemplate(w, "recognition-person-list", person)
+		} else{
+			per1:=person
+			per2:=person
+			per1.People=per1.People[:10]
+			per2.People=per2.People[10:]
+			tpl.ExecuteTemplate(w, "recognition-person-list", per1)
+			tpl.ExecuteTemplate(w, "recognition-person-list", per2)
+		}
+		for i:=0;i<3;i++ {
+			tpl.ExecuteTemplate(w, "recognition-div-end", nil)
+		}
 
 		if iter%4 == 0 {
 			tpl.ExecuteTemplate(w, "recognition-div-end", nil)
@@ -78,4 +70,5 @@ func Recognition(w http.ResponseWriter, tpl *template.Template) {
 	}
 
 	tpl.ExecuteTemplate(w, "recognition-div-end", nil)
+
 }

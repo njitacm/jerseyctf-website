@@ -59,12 +59,6 @@ func GetSponsors() Sponsors {
 
 	analyst := []Sponsor{
 		{
-			HREF:   "https://sci.njit.edu/",
-			Source: "njit_sci_logo.png",
-			ALT:    "NJIT SCI",
-			Width:  "300",
-		},
-		{
 			HREF:   "https://www.lutron.com/en-US/pages/default.aspx",
 			Source: "lutron_logo.png",
 			ALT:    "Lutron",

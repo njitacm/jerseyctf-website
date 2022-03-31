@@ -11,12 +11,11 @@
 
 {{block "speaker-card" .}}
 <div class="card" style="padding: 1rem;">
-    <img src="/assets/img/speaker/{{.Pic}}" class="card-img-top" alt="{{.Name}}">
+    <!--<img src="/assets/img/speaker/{{.Pic}}" class="card-img-top" alt="{{.Name}}">-->
     <div class="card-body">
         <h5 style="font-weight: bold;" class="card-title">{{.Name}}</h5>
         <p class="card-text">{{.Position}}</p>
-        <p class="card-text">Speaker Topic: <i>{{.Role}}</i></p>
-        <a target="_blank" href="https://www.linkedin.com/in/{{.LinkedIn}}/">LinkedIn</a>
+       <!-- <p class="card-text">Speaker Topic: <i>{{.Role}}</i></p>-->
     </div>
 </div>
 {{end}}
