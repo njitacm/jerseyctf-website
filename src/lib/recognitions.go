@@ -14,7 +14,7 @@ type Instit struct {
 func GetRecognizedPeople() []Instit {
 	return []Instit{
 		{
-			Name:"NJIT YWCC Administration and Students:",
+			Name:"NJIT YWCC Administration and Students",
 			People:[]string{"Dina","Andres", "Tensei", "Robert", "Nishaant", "Andrew", "George", "Keith", "Sreya"," SCI Principal Investigators", "Logan", "David", "Christian", "Cade", "Alexander", "Massa", "Joseph", "Ethan", "Anthony" },
 		},
 		{
