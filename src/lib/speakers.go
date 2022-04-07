@@ -72,11 +72,29 @@ func GetSpeakers() []SpeakerStruct {
 		},
 		{
 			Pic:      "",
-			Name:     "Oscar Minks",
-			Position: "Chief Technology Officer | FRSecure", 
+			Name:     "Mike \"Pinky\" Thompson",
+			Position: "Incident Response Team Lead | FRSecure", 
 			Role:     "Keynote Speaker",
 		},
-	
+		{
+			Pic:      "",
+			Name:     "Pat Rucker",
+			Position: "Named Account Manager | Palo Alto Networks", 
+			Role:     "Keynote Speaker",
+		},
+		{
+			Pic:      "",
+			Name:     "Jermaine Bethune",
+			Position: "System Engineer | Palo Alto Networks", 
+			Role:     "Keynote Speaker",
+		},
+		{
+			Pic:      "",
+			Name:     "Joe Kim",
+			Position: "CTO/EVP of Engineering | Squadra Solutions", 
+			Role:     "Keynote Speaker",
+		},
+
 	}
 }
 
