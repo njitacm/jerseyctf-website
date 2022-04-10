@@ -23,8 +23,8 @@ func GetResources() []Resource {
 		},
 		{
 			Year:     "2022",
-			Writeups: "#",
-			Playlist: "#",
+			Writeups: "https://github.com/njitacm/jerseyctf-2022-challenges/tree/main/writeups",
+			Playlist: "https://youtube.com/playlist?list=PLrcTWWy-esnCuaiEMSj6Bst4phnq-Qg6B",
 		},
 	}
 }
