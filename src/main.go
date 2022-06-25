@@ -57,6 +57,24 @@ func index(w http.ResponseWriter, r *http.Request) {
 
 }
 
+func ccpp(w http.ResponseWriter, r *http.Request) {
+	tmpl := template.Must(template.ParseGlob("templates/*.html"))
+
+	// Header Template in Layout.html
+	tmpl.ExecuteTemplate(w, "header", nil)
+
+	// Nav Bar Template in Layout.html
+	navBar := []string{"Code of Conduct","Privacy Policy"}
+	tmpl.ExecuteTemplate(w, "navNBody", navBar)
+
+	tmpl.ExecuteTemplate(w, "code-of-conduct", nil)
+
+	tmpl.ExecuteTemplate(w, "privacy-policy", nil)
+
+	// Footer Template in Layout.html
+	tmpl.ExecuteTemplate(w, "footer", nil)
+  }
+  
 func main() {
 	port := strconv.Itoa(PORT)
 
@@ -69,6 +87,7 @@ func main() {
 	http.Handle("/assets/", http.StripPrefix("/assets", fs))
 
 	http.HandleFunc("/", index)
+	http.HandleFunc("/ccpp", ccpp)
 
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }

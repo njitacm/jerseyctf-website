@@ -61,3 +61,17 @@
     justify-content: center;
     margin-bottom:10px;
 }
+
+li{
+    margin: .5% 0 .5% 5%;
+}
+
+[id='Code of Conduct'] > p,
+[id='Privacy Policy'] > p{
+    padding: .5% 4% .5% 4%;
+}
+
+[id='Code of Conduct'] > h3,
+[id='Privacy Policy'] > h3{
+    font-weight: bold;
+}
