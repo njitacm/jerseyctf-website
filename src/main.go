@@ -22,36 +22,48 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "header", nil)
 
 	// Nav Bar Template in Layout.html
-	navBar := []string{"Registration","Schedule","Speakers","Sponsors","FAQ","Recognitions","Resources"}
+
+	navBar := []string{"Registration", "FAQ", "Recognitions","Resources"} //"Schedule","Speakers","Sponsors",
 	tmpl.ExecuteTemplate(w, "navNBody", navBar)
 
 	// Infographic in Infographic.html
 	tmpl.ExecuteTemplate(w, "infographic", nil)
 
-	// registration in registration.html
-	tmpl.ExecuteTemplate(w, "registration", nil)
+	for _, value := range navBar {
+		switch value {
 
-	// schedule in schedule.html
-	tmpl.ExecuteTemplate(w, "schedule", nil)
+			case "Registration":
+				// registration in registration.html
+				tmpl.ExecuteTemplate(w, "registration", nil)
 
-	// speakers in speakers.html
-	L.Speaker(w, tmpl)
+			case "Schedule":
+				// schedule in schedule.html
+				tmpl.ExecuteTemplate(w, "schedule", nil)
 
-	// sponsors in sponsors.html
-	sponsors := L.GetSponsors()
-	tmpl.ExecuteTemplate(w, "sponsors", sponsors)
+			case "Speakers":
+				// speakers in speakers.html
+				L.Speaker(w, tmpl)
 
-	// faq in faq.html
-	faq := L.GetFaq()
-	tmpl.ExecuteTemplate(w, "faq", faq)
+			case "Sponsors":
+				// sponsors in sponsors.html
+				sponsors := L.GetSponsors()
+				tmpl.ExecuteTemplate(w, "sponsors", sponsors)
 
-	// recongitions in recognitions.html
-	L.Recognition(w, tmpl)
+			case "FAQ":
+				// faq in faq.html
+				faq := L.GetFaq()
+				tmpl.ExecuteTemplate(w, "faq", faq)
 
-	// writeups in writeups.html
-	resources := L.GetResources()
-	tmpl.ExecuteTemplate(w, "resources", resources)
+			case "Recognitions":
+				// recongitions in recognitions.html
+				L.Recognition(w, tmpl)
 
+			case "Resources":
+				// writeups in writeups.html
+				resources := L.GetResources()
+				tmpl.ExecuteTemplate(w, "resources", resources)
+		}
+	}
 	// Footer Template in Layout.html
 	tmpl.ExecuteTemplate(w, "footer", nil)
 
@@ -64,7 +76,7 @@ func ccpp(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "header", nil)
 
 	// Nav Bar Template in Layout.html
-	navBar := []string{"Code of Conduct","Privacy Policy"}
+	navBar := []string{"Code of Conduct", "Privacy Policy"}
 	tmpl.ExecuteTemplate(w, "navNBody", navBar)
 
 	tmpl.ExecuteTemplate(w, "code-of-conduct", nil)
@@ -73,8 +85,8 @@ func ccpp(w http.ResponseWriter, r *http.Request) {
 
 	// Footer Template in Layout.html
 	tmpl.ExecuteTemplate(w, "footer", nil)
-  }
-  
+}
+
 func main() {
 	port := strconv.Itoa(PORT)
 
