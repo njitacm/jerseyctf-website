@@ -10,7 +10,7 @@ func GetFaq() []Faq {
 	return []Faq{
 		{
 			Question: "What is JerseyCTF?",
-			Answer:   "JerseyCTF is a beginner-friendly Capture the Flag competition that aims to inspire interest in cybersecurity. Hosted by the <a target=\"_blank\" href=https://njit.acm.org>NJIT ACM</a> organization and <a target=\"_blank\" href=https://sci.njit.edu>NJIT SCI</a> program, it is geared towards students, beginners, and professionals alike. JerseyCTF provides participants with jeopardy-style questions in categories including cryptography, forensics, binary exploitation/reversing, open-source intelligence, and web exploitation.  JerseyCTF features a track parallel to the CTF competition, consisting of presentations and panels with renowned speakers from industry and government.",
+			Answer:   "JerseyCTF is a beginner-friendly Capture the Flag competition that aims to inspire interest in cybersecurity. Hosted by the NJIT <a target='_blank' href=https://njit.acm.org>ACM</a> and <a target='_blank' href= https://njiticc.com>NICC</a> organizations and the <a target='_blank' href=https://sci.njit.edu>NJIT SCI</a> program, it is geared towards students, beginners, and professionals alike. JerseyCTF provides participants with jeopardy-style questions in categories including cryptography, forensics, binary exploitation/reversing, open-source intelligence, and web exploitation.  JerseyCTF features a track parallel to the CTF competition, consisting of presentations and panels with renowned speakers from industry and government.",
 		},
 		{
 			Question: "Who can sign up to compete?",
