@@ -20,7 +20,7 @@ NJIT ACM's website for registration and information on the JerseyCTF event. ([je
 # To test JCTF site locally
 # Required: go (golang) 
 # Optional: make
-$ git clone https://github.com/njitacm/jerseyctf-website.git
+$ git clone https://github.com/jerseyctf/jerseyctf-website.git
 $ cd jerseyctf-website/src
 $ go build main.go
 # Optionally: use `make`
