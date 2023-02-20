@@ -14,7 +14,7 @@ func GetFaq() []Faq {
 		},
 		{
 			Question: "Who can sign up to compete?",
-			Answer:   "Students, beginners, and professionals are all welcome to compete as long as they are over the age of 13. Information about minors attending in-person TBD. ",
+			Answer:   "Students, beginners, and professionals are all welcome to compete. Must be 18+ to attend in-person.",
 		},
 		{
 			Question: "What do I need to compete?",
