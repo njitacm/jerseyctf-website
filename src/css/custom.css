@@ -67,6 +67,10 @@ li{
     margin: .5% 0 .5% 5%;
 }
 
+.resourceImg{
+    height: 75px;
+}
+
 [id='Code of Conduct'] > p,
 [id='Privacy Policy'] > p{
     padding: .5% 4% .5% 4%;
