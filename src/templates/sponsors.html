@@ -1,22 +1,23 @@
 {{block "sponsors" .}}
-<div id="Sponsors" class="row justify-content-evenly">
+<div id="Sponsors" class="row justify-content-evenly mb-3">
     <h4 class="jerctf">@sponsors</h4>
     <div class="col text-center">
     {{range .AllTiers}}
-        <h5 class="sponsec"><span class="{{.CSSName}}">{{.TierName}}</span></h5>
-        <div class="row justify-content-evenly">
-            <div class="col-6 col-sm-5 col-lg-6"> 
-            {{range .Spons}}
-                <div class="d-flex justify-content-evenly">
-                    <a target="_blank" href="{{.HREF}}">
-                        <img class="img-fluid" src="/assets/img/sponsor/{{.Source}}" alt="{{.ALT}}" width="{{.Width}}">
-                    </a>
+        {{if .Spons}}
+            <h5 class="sponsec"><span class="{{.CSSName}}">{{.TierName}}</span></h5>
+            <div class="row justify-content-evenly">
+                <div class="col-6 col-sm-5 col-lg-6"> 
+                {{range .Spons}}
+                    <div class="d-flex justify-content-evenly">
+                        <a target="_blank" href="{{.HREF}}">
+                            <img class="img-fluid" src="/assets/img/sponsor/{{.Source}}" alt="{{.ALT}}" width="{{.Width}}">
+                        </a>
+                    </div>
+                {{end}}
                 </div>
-            {{end}}
             </div>
-        </div>
+        {{end}}
     {{end}}
-    <!--DRodgers 2022-03-04: Add in meme gif?-->
     </div>
 </div>
 {{end}}

@@ -28,41 +28,17 @@ func GetSponsors() Sponsors {
 	}
 	
 	ciso := []Sponsor{
-		{
-			HREF:   "https://frsecure.com/",
-			Source: "frsecure_logo.png",
-			ALT:    "FRSecure",
-			Width:  "450",
-		},
 	}
 	
 	manager := []Sponsor{
-		{
-			HREF:   "https://www.paloaltonetworks.com/",
-			Source: "palo_alto_logo.png",
-			ALT:    "Palo Alto Networks",
-			Width:  "350",
-		},
-		{
-			HREF:   "https://cloud.google.com/",
-			Source: "google_logo.gif",
-			ALT:    "Google",
-			Width:  "200",
-		},
-		{
-			HREF:   "https://www.crowdstrike.com/",
-			Source: "crowdstrike_logo.png",
-			ALT:    "CrowdStrike",
-			Width:  "350",
-		},
 	}
 
 	analyst := []Sponsor{
 		{
-			HREF:   "https://www.lutron.com/en-US/pages/default.aspx",
-			Source: "lutron_logo.png",
-			ALT:    "Lutron",
-			Width:  "300",
+			HREF:   "https://www.offensive-security.com/",
+			Source: "offensive_security_logo.png",
+			ALT:    "Offensive Security",
+			Width:  "400",
 		},
 	}
 		
