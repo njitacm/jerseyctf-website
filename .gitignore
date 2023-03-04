@@ -1,2 +1,4 @@
 # Ignored executables written by Go
-src/main
+**/main
+**/main.exe
+**/a.out
