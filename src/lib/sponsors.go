@@ -35,11 +35,18 @@ func GetSponsors() Sponsors {
 
 	analyst := []Sponsor{
 		{
+			HREF:   "https://www.paloaltonetworks.com/",
+			Source: "palo_alto_logo.png",
+			ALT:    "Palo Alto",
+			Width:  "400",
+		},
+		{
 			HREF:   "https://www.offensive-security.com/",
 			Source: "offensive_security_logo.png",
 			ALT:    "Offensive Security",
 			Width:  "400",
 		},
+
 	}
 		
 	tiers := []Tier{
