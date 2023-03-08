@@ -41,9 +41,15 @@ func GetSponsors() Sponsors {
 			Width:  "400",
 		},
 		{
-			HREF:   "https://www.offensive-security.com/",
-			Source: "offensive_security_logo.png",
-			ALT:    "Offensive Security",
+			HREF:   "https://www.github.com/",
+			Source: "github_logo.png",
+			ALT:    "GitHub",
+			Width:  "150",
+		},
+		{
+			HREF:   "https://www.offsec.com/",
+			Source: "offsec_logo.jpg",
+			ALT:    "OffSec",
 			Width:  "400",
 		},
 
