@@ -52,7 +52,12 @@ func GetSponsors() Sponsors {
 			ALT:    "OffSec",
 			Width:  "400",
 		},
-
+		{
+			HREF:   "https://www.specterops.io",
+			Source: "specterops_logo.png",
+			ALT:    "SpecterOps",
+			Width:  "400",
+		},
 	}
 		
 	tiers := []Tier{
