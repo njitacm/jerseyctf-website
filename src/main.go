@@ -20,7 +20,7 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "header", nil)
 
 	//The sections that load are based off of what strings are in this list
-	navBar := []string{ "Registration","Sponsors","FAQ","Resources"} // "Registration","Schedule","Sponsors","Speakers","Recognitions","FAQ","Resources"
+	navBar := []string{ "Registration","Speakers","Sponsors","FAQ","Resources"} // "Registration","Schedule","Sponsors","Recognitions","FAQ","Resources"
 	tmpl.ExecuteTemplate(w, "navNBody", navBar)
 
 	tmpl.ExecuteTemplate(w, "infographic", nil)

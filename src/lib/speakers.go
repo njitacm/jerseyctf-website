@@ -15,7 +15,8 @@ type SpeakerStruct struct {
 	Pic      string
 	Name     string
 	Position string
-	Role     string
+	Talk     string
+	Time	 string
 }
 
 // Copy and Paste Add
@@ -30,69 +31,32 @@ type SpeakerStruct struct {
 func GetSpeakers() []SpeakerStruct {
 	return []SpeakerStruct{
 		{
-			Pic:      "MichaelGeraghty.jpg",
-			Name:     "Michael Geraghty",
-			Position: "CISO, State of New Jersey & Director | NJCCIC",//CISO, State of New Jersey & Director, 
-			Role:     "Keynote Speaker",
+			Pic:      "JohnHammond.png",
+			Name:     "John Hammond",
+			Position: "Cybersecurity Researcher, Educator & Content Creator", 
+			Talk:     "Cybersecurity Shop Talk",
+			Time:	  "Saturday 4/15 (1:00 P.M. EDT)",
 		},
 		{
-			Pic:      "",
-			Name:     "Jon Taylor",
-			Position: "Senior Security Manager and Principal Consultant | Accenture",
-			Role:     "Keynote Speaker",
-		},{
-			Pic:      "",
-			Name:     "Brian Herron",
-			Position: "Supervisory Special Agent | FBI", 
-			Role:     "Keynote Speaker",
+			Pic:      "personPlaceHolder.png",
+			Name:     "NJCCIC Speaker #1",
+			Position: "", 
+			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
+			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
 		},
 		{
-			Pic:      "",
-			Name:     "Kevin McKenzie",
-			Position: "Cyber Security Analyst | NJCCIC", 
-			Role:     "Keynote Speaker",
+			Pic:      "personPlaceHolder.png",
+			Name:     "NJCCIC Speaker #2",
+			Position: "", 
+			Talk:     "Two-Factor Authentication: Not as Secure as You Think",
+			Time:	  "Saturday 4/15 (3:00 P.M. EDT)",
 		},
 		{
-			Pic:      "",
-			Name:     "Max Saltonstall",
-			Position: "(Pre-Recorded) IT Technical Director | Google", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Donnie Rodgers",
-			Position: "Dynamic Site Security Analyst | PlainDilemma", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Debbi Blyth",
-			Position: "(Pre-Recorded) Executive Public Sector Strategist | CrowdStrike", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Mike \"Pinky\" Thompson",
-			Position: "Incident Response Team Lead | FRSecure", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Pat Rucker",
-			Position: "Named Account Manager | Palo Alto Networks", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Jermaine Bethune",
-			Position: "System Engineer | Palo Alto Networks", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Joe Kim",
-			Position: "CTO/EVP of Engineering | Squadra Solutions", 
-			Role:     "Keynote Speaker",
+			Pic:      "personPlaceHolder.png",
+			Name:     "Ilan Ponimansky",
+			Position: "Staff Cloud Security Engineer at Block", 
+			Talk:     "",
+			Time:	  "Saturday 4/15 (4:00 P.M. EDT)",
 		},
 
 	}
@@ -115,6 +79,8 @@ func Speaker(w http.ResponseWriter, tpl *template.Template) {
 
 	length := len(speakers)
 
+
+	//TODO:Simplify the code, it now works with rowcol, no need for this nonesense
 	// Creates a single line of speakers
 	if length < 6 {
 		tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
