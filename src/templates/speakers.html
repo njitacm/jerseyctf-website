@@ -4,11 +4,11 @@
     {{end}}
 
 {{block "speaker-card-group-start" .}}
-<div class="card-group row row-cols-4" style="padding: 2rem;">
+<div class="card-group row" style="padding: 2rem;">
 {{end}}
 
 {{block "speaker-card" .}}
-<div class="col">
+<div class="col-md-4 col-lg-3 col-sm-6">
     <div class="card h-100" style="padding: 1rem;">
         <img src="/assets/img/speaker/{{.Pic}}" class="card-img-top" alt="{{.Name}}">
         <div class="card-body">

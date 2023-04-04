@@ -52,7 +52,7 @@ func GetSpeakers() []SpeakerStruct {
 			Time:	  "Saturday 4/15 (3:00 P.M. EDT)",
 		},
 		{
-			Pic:      "personPlaceholder.png",
+			Pic:      "IlanPonimansky.jpg",
 			Name:     "Ilan Ponimansky",
 			Position: "Staff Cloud Security Engineer at Block", 
 			Talk:     "",

@@ -18,7 +18,7 @@ func GetFaq() []Faq {
 		},
 		{
 			Question: "What do I need to compete?",
-			Answer:   "All you need is an Internet-connected device in order to compete. It is completely optional if you want to use ethical hacking/penetration testing Linux distributions like Kali or Parrot OS, but these may help you since there are many pre-installed tools. These distributions are open-source and can be deployed in VMware, VirtualBox, or any other virtualization software.",
+			Answer:   "All you need is an Internet-connected device in order to compete and watch our tech talks. While optional, it is recommended for you to use penetration testing Linux distributions like Kali or Parrot OS because the many pre-installed tools will help you. These distributions are free, open-source, and can be deployed in VMware, VirtualBox, or any other virtualization software. Check out our <a href=https://ctf.jerseyctf.com/resources target='_blank'> beginner resources page</a> for more recommendations. ",
 		},
 		{
 			Question: "Will there be prizes?",
