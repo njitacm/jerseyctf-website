@@ -38,16 +38,37 @@ func GetSpeakers() []SpeakerStruct {
 			Time:	  "Saturday 4/15 (1:00 P.M. EDT)",
 		},
 		{
-			Pic:      "personPlaceholder.png",
-			Name:     "NJCCIC Speaker #1",
-			Position: "", 
+			Pic:      "CelinePedalino.jpg",
+			Name:     "Celine Pedalino",
+			Position: "SOC Analyst at NJCCIC", 
+			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
+			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
+		},
+		{
+			Pic:      "SeonukKim.jpg",
+			Name:     "Seonuk Kim",
+			Position: "SOC Analyst at NJCCIC", 
+			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
+			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
+		},
+		{
+			Pic:      "TrentMeyers.jpg",
+			Name:     "Trent Meyers",
+			Position: "SOC Analyst at NJCCIC", 
+			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
+			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
+		},
+		{
+			Pic:      "ParthibhaSwathi.jpg",
+			Name:     "Parthibha Swathi",
+			Position: "Security Analyst at NJCCIC", 
 			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
 			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
 		},
 		{
 			Pic:      "personPlaceholder.png",
-			Name:     "NJCCIC Speaker #2",
-			Position: "", 
+			Name:     "Andrew Garcia",
+			Position: "Security Analyst at NJCCIC", 
 			Talk:     "Two-Factor Authentication: Not as Secure as You Think",
 			Time:	  "Saturday 4/15 (3:00 P.M. EDT)",
 		},
@@ -55,7 +76,7 @@ func GetSpeakers() []SpeakerStruct {
 			Pic:      "IlanPonimansky.jpg",
 			Name:     "Ilan Ponimansky",
 			Position: "Staff Cloud Security Engineer at Block", 
-			Talk:     "",
+			Talk:     "Acing your Cloud Security Interviews AMA",
 			Time:	  "Saturday 4/15 (4:00 P.M. EDT)",
 		},
 
@@ -77,64 +98,16 @@ func Speaker(w http.ResponseWriter, tpl *template.Template) {
 
 	tpl.ExecuteTemplate(w, "speaker-start", nil)
 
-	length := len(speakers)
 
 
-	//TODO:Simplify the code, it now works with rowcol, no need for this nonesense
-	// Creates a single line of speakers
-	if length < 6 {
-		tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
+	tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
 
-		for _, speaker := range speakers {
-			tpl.ExecuteTemplate(w, "speaker-card", speaker)
-		}
-
-		tpl.ExecuteTemplate(w, "speaker-div-end", nil)
+	for _, speaker := range speakers {
+		tpl.ExecuteTemplate(w, "speaker-card", speaker)
 	}
 
-	// Creates 2 card groups, split by using some integer division
-	if length <= 12 && length >= 6 {
+	tpl.ExecuteTemplate(w, "speaker-div-end", nil)
 
-		// First Group of Speakers (Speakers[0: length/2])
-		tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
-
-		for _, speaker := range speakers[0 : length/2] {
-			tpl.ExecuteTemplate(w, "speaker-card", speaker)
-		}
-
-		tpl.ExecuteTemplate(w, "speaker-div-end", nil)
-
-		// Second Group of Speakers (Speakers[length/2: length])
-		tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
-
-		for _, speaker := range speakers[length/2 : length] {
-			tpl.ExecuteTemplate(w, "speaker-card", speaker)
-		}
-
-		tpl.ExecuteTemplate(w, "speaker-div-end", nil)
-
-	}
-
-	// Creates a dynamic grid
-	if length > 12 {
-		var iter int
-
-		for idx, speaker := range speakers {
-
-			iter++
-
-			j := idx + 1
-			if j%SEGMENT_NUM == 1 {
-				tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
-			}
-
-			tpl.ExecuteTemplate(w, "speaker-card", speaker)
-
-			if iter%SEGMENT_NUM == 0 {
-				tpl.ExecuteTemplate(w, "speaker-div-end", nil)
-			}
-		}
-	}
 
 	tpl.ExecuteTemplate(w, "speaker-div-end", nil)
 
