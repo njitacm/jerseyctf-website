@@ -59,8 +59,8 @@ func GetSpeakers() []SpeakerStruct {
 			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
 		},
 		{
-			Pic:      "ParthibhaSwathi.jpg",
-			Name:     "Parthibha Swathi",
+			Pic:      "SwathiParthibha.jpg",
+			Name:     "Swathi Parthibha",
 			Position: "Security Analyst at NJCCIC", 
 			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
 			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
