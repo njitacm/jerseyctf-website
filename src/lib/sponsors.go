@@ -41,6 +41,12 @@ func GetSponsors() Sponsors {
 			Width:  "400",
 		},
 		{
+			HREF:   "https://cloud.google.com/",
+			Source: "google_logo.gif",
+			ALT:    "Google",
+			Width:  "200",
+		},
+		{
 			HREF:   "https://www.github.com/",
 			Source: "github_logo.png",
 			ALT:    "GitHub",
