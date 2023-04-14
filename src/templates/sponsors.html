@@ -8,21 +8,25 @@
                     style="color: inherit; text-decoration: inherit;" download> Download our sponsorship flyer here.</a>
             </h3>
         </button>
-        {{range .AllTiers}}
-        {{if .Spons}}
-        <h5 class="sponsec"><span class="{{.CSSName}}">{{.TierName}}</span></h5>
-        <div class="row justify-content-evenly">
-            <div class="col-6 col-sm-5 col-lg-6">
-                {{range .Spons}}
-                <div class="d-flex justify-content-evenly m-3">
-                    <a target="_blank" href="{{.HREF}}">
-                        <img class="img-fluid" src="/assets/img/sponsor/{{.Source}}" alt="{{.ALT}}" width="{{.Width}}">
-                    </a>
+        
+        <!--true:Show sponsors; false:Hide sponsors-->
+        {{if true}}
+            {{range .AllTiers}}
+                {{if .Spons}}
+                <h5 class="sponsec"><span class="{{.CSSName}}">{{.TierName}}</span></h5>
+                <div class="row justify-content-evenly">
+                    <div class="col-6 col-sm-5 col-lg-6">
+                        {{range .Spons}}
+                        <div class="d-flex justify-content-evenly m-3">
+                            <a target="_blank" href="{{.HREF}}">
+                                <img class="img-fluid" src="/assets/img/sponsor/{{.Source}}" alt="{{.ALT}}" width="{{.Width}}">
+                            </a>
+                        </div>
+                        {{end}}
+                    </div>
                 </div>
                 {{end}}
-            </div>
-        </div>
-        {{end}}
+            {{end}}
         {{end}}
     </div>
 </div>
