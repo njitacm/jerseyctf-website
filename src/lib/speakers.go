@@ -40,35 +40,35 @@ func GetSpeakers() []SpeakerStruct {
 		{
 			Pic:      "CelinePedalino.jpg",
 			Name:     "Celine Pedalino",
-			Position: "SOC Analyst at NJCCIC", 
+			Position: "SOC Analyst at the NJCCIC", 
 			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
 			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
 		},
 		{
 			Pic:      "SeonukKim.jpg",
 			Name:     "Seonuk Kim",
-			Position: "SOC Analyst at NJCCIC", 
+			Position: "SOC Analyst at the NJCCIC", 
 			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
 			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
 		},
 		{
 			Pic:      "TrentMeyers.jpg",
 			Name:     "Trent Meyers",
-			Position: "SOC Analyst at NJCCIC", 
+			Position: "SOC Analyst at the NJCCIC", 
 			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
 			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
 		},
 		{
 			Pic:      "SwathiParthibha.jpg",
 			Name:     "Swathi Parthibha",
-			Position: "Security Analyst at NJCCIC", 
+			Position: "Security Analyst at the NJCCIC", 
 			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
 			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
 		},
 		{
 			Pic:      "personPlaceholder.png",
 			Name:     "Andrew Garcia",
-			Position: "Security Analyst at NJCCIC", 
+			Position: "Security Analyst at the NJCCIC", 
 			Talk:     "Two-Factor Authentication: Not as Secure as You Think",
 			Time:	  "Saturday 4/15 (3:00 P.M. EDT)",
 		},
@@ -79,7 +79,13 @@ func GetSpeakers() []SpeakerStruct {
 			Talk:     "Acing your Cloud Security Interviews AMA",
 			Time:	  "Saturday 4/15 (4:00 P.M. EDT)",
 		},
-
+		{
+			Pic:      "personPlaceholder.png",
+			Name:     "Kevin Conklin",
+			Position: "Cyber National Security Supervisory Special Agent at FBI Newark", 
+			Talk:     "Inside the FBI Cyber Program",
+			Time:	  "Saturday 4/15 (5:00 P.M. EDT)",
+		},
 	}
 }
 
