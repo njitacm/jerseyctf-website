@@ -38,13 +38,6 @@ func GetSpeakers() []SpeakerStruct {
 			Time:	  "Saturday 4/15 (1:00 P.M. EDT)",
 		},
 		{
-			Pic:      "CelinePedalino.jpg",
-			Name:     "Celine Pedalino",
-			Position: "SOC Analyst at the NJCCIC", 
-			Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
-			Time:	  "Saturday 4/15 (2:00 P.M. EDT)",
-		},
-		{
 			Pic:      "SeonukKim.jpg",
 			Name:     "Seonuk Kim",
 			Position: "SOC Analyst at the NJCCIC", 
