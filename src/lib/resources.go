@@ -6,12 +6,6 @@ type Resource struct {
 	Playlist string
 }
 
-// Copy and Paste Add
-// {
-// 	Year:     "2022",
-// 	Writeups: "#",
-// 	Playlist: "#",
-// },
 
 // Returns an Array of Writeups for usage throughout program
 func GetResources() []Resource {
@@ -25,6 +19,11 @@ func GetResources() []Resource {
 			Year:     "2022",
 			Writeups: "https://github.com/njitacm/jerseyctf-2022-challenges/tree/main/writeups",
 			Playlist: "https://youtube.com/playlist?list=PLrcTWWy-esnCuaiEMSj6Bst4phnq-Qg6B",
+		},
+		{
+			Year:"2023",
+			Writeups: "https://ctftime.org/event/1908/tasks/",
+			Playlist: "https://www.youtube.com/playlist?list=PLrcTWWy-esnDXi3khogdlAgkisL19IM08",
 		},
 	}
 }

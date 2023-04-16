@@ -26,7 +26,7 @@ func GetFaq() []Faq {
 		},
 		{
 			Question: "How big is JerseyCTF?",
-			Answer:   "JerseyCTF had 1,470 registrations in 2022. We are looking forward to welcoming more registrants and participants in 2023!",
+			Answer:   "JerseyCTF had 1,515 registrations in 2023. We are looking forward to welcoming more registrants and participants in 2024!",
 		},
 		{
 			Question: "Do I have to pay to compete in JerseyCTF?",
