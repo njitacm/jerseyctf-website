@@ -1,9 +1,9 @@
 package lib
 
 type Tier struct {
-	Spons []Sponsor
+	Spons    []Sponsor
 	TierName string
-	CSSName string
+	CSSName  string
 }
 
 type Sponsor struct {
@@ -26,67 +26,67 @@ func GetSponsors() Sponsors {
 			Width:  "200",
 		},
 	}
-	
-	ciso := []Sponsor{
-		{
-			HREF:   "https://frsecure.com/",
-			Source: "frsecure_logo.png",
-			ALT:    "FRSecure",
-			Width:  "450",
-		},
-	}
-	
-	manager := []Sponsor{
-		{
-			HREF:   "https://www.paloaltonetworks.com/",
-			Source: "palo_alto_logo.png",
-			ALT:    "Palo Alto Networks",
-			Width:  "350",
-		},
-		{
-			HREF:   "https://cloud.google.com/",
-			Source: "google_logo.gif",
-			ALT:    "Google",
-			Width:  "200",
-		},
-		{
-			HREF:   "https://www.crowdstrike.com/",
-			Source: "crowdstrike_logo.png",
-			ALT:    "CrowdStrike",
-			Width:  "350",
-		},
-	}
+
+	ciso := []Sponsor{}
+
+	manager := []Sponsor{}
 
 	analyst := []Sponsor{
-		{
-			HREF:   "https://www.lutron.com/en-US/pages/default.aspx",
-			Source: "lutron_logo.png",
-			ALT:    "Lutron",
-			Width:  "300",
-		},
+		/*
+			{
+				HREF:   "https://www.paloaltonetworks.com/",
+				Source: "palo_alto_logo.png",
+				ALT:    "Palo Alto",
+				Width:  "400",
+			},
+			{
+				HREF:   "https://cloud.google.com/",
+				Source: "google_logo.gif",
+				ALT:    "Google",
+				Width:  "200",
+			},
+			{
+				HREF:   "https://www.github.com/",
+				Source: "github_logo.png",
+				ALT:    "GitHub",
+				Width:  "150",
+			},
+			{
+				HREF:   "https://www.offsec.com/",
+				Source: "offsec_logo.jpg",
+				ALT:    "OffSec",
+				Width:  "400",
+			},
+			{
+				HREF:   "https://www.specterops.io",
+				Source: "specterops_logo.png",
+				ALT:    "SpecterOps",
+				Width:  "400",
+			},
+		*/
 	}
-		
+
 	tiers := []Tier{
 		{
-			Spons: title,
+			Spons:    title,
 			TierName: "Title Sponsor",
-			CSSName: "sponsor-title",
+			CSSName:  "sponsor-title",
 		},
-		
+
 		{
-			Spons: ciso,
+			Spons:    ciso,
 			TierName: "CISO Sponsor",
-			CSSName: "sponsor-ciso",
+			CSSName:  "sponsor-ciso",
 		},
 		{
-			Spons: manager,
+			Spons:    manager,
 			TierName: "Security Manager Sponsor",
-			CSSName: "sponsor-manager",
+			CSSName:  "sponsor-manager",
 		},
 		{
-			Spons: analyst,
+			Spons:    analyst,
 			TierName: "Security Analyst Sponsor",
-			CSSName: "sponsor-analyst",
+			CSSName:  "sponsor-analyst",
 		},
 	}
 

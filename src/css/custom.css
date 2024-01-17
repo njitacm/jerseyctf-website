@@ -11,6 +11,7 @@
     color:white;
     margin-top: -10px;
     font-size: 75%;
+    margin-left: 15%;
 }
 .registText{
     margin: 10px 0px 20px 0px;
@@ -64,6 +65,15 @@
 
 li{
     margin: .5% 0 .5% 5%;
+}
+
+.resourceImg{
+    height: 75px;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 [id='Code of Conduct'] > p,

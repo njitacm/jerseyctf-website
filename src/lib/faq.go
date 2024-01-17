@@ -14,11 +14,11 @@ func GetFaq() []Faq {
 		},
 		{
 			Question: "Who can sign up to compete?",
-			Answer:   "Students, beginners, and professionals are all welcome to compete as long as they are over the age of 18.",
+			Answer:   "Students, beginners, and professionals are all welcome to compete. Must be 18+ to attend in-person.",
 		},
 		{
 			Question: "What do I need to compete?",
-			Answer:   "All you need is an Internet-connected device in order to compete. It is completely optional if you want to use ethical hacking/penetration testing Linux distributions like Kali or Parrot OS, but these may help you since there are many pre-installed tools. These distributions are open-source and can be deployed in VMware, VirtualBox, or any other virtualization software.",
+			Answer:   "All you need is an Internet-connected device in order to compete and watch our tech talks. While optional, it is recommended for you to use penetration testing Linux distributions like Kali or Parrot OS because the many pre-installed tools will help you. These distributions are free, open-source, and can be deployed in VMware, VirtualBox, or any other virtualization software. Check out our <a href=https://ctf.jerseyctf.com/resources target='_blank'> beginner resources page</a> for more recommendations. ",
 		},
 		{
 			Question: "Will there be prizes?",
@@ -26,7 +26,7 @@ func GetFaq() []Faq {
 		},
 		{
 			Question: "How big is JerseyCTF?",
-			Answer:   "JerseyCTF had 1,470 registrations in 2022. We are looking forward to welcoming more registrants and participants in 2023!",
+			Answer:   "JerseyCTF had 1,515 registrations in 2023. We are looking forward to welcoming more registrants and participants in 2024!",
 		},
 		{
 			Question: "Do I have to pay to compete in JerseyCTF?",

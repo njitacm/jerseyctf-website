@@ -8,14 +8,15 @@ import (
 // Segment Number refers to how one wishes to break down
 // cards
 const (
-	SEGMENT_NUM = 5
+	SEGMENT_NUM = 1
 )
 
 type SpeakerStruct struct {
 	Pic      string
 	Name     string
 	Position string
-	Role     string
+	Talk     string
+	Time     string
 }
 
 // Copy and Paste Add
@@ -29,72 +30,65 @@ type SpeakerStruct struct {
 
 func GetSpeakers() []SpeakerStruct {
 	return []SpeakerStruct{
-		{
-			Pic:      "MichaelGeraghty.jpg",
-			Name:     "Michael Geraghty",
-			Position: "CISO, State of New Jersey & Director | NJCCIC",//CISO, State of New Jersey & Director, 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Jon Taylor",
-			Position: "Senior Security Manager and Principal Consultant | Accenture",
-			Role:     "Keynote Speaker",
-		},{
-			Pic:      "",
-			Name:     "Brian Herron",
-			Position: "Supervisory Special Agent | FBI", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Kevin McKenzie",
-			Position: "Cyber Security Analyst | NJCCIC", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Max Saltonstall",
-			Position: "(Pre-Recorded) IT Technical Director | Google", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Donnie Rodgers",
-			Position: "Dynamic Site Security Analyst | PlainDilemma", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Debbi Blyth",
-			Position: "(Pre-Recorded) Executive Public Sector Strategist | CrowdStrike", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Mike \"Pinky\" Thompson",
-			Position: "Incident Response Team Lead | FRSecure", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Pat Rucker",
-			Position: "Named Account Manager | Palo Alto Networks", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Jermaine Bethune",
-			Position: "System Engineer | Palo Alto Networks", 
-			Role:     "Keynote Speaker",
-		},
-		{
-			Pic:      "",
-			Name:     "Joe Kim",
-			Position: "CTO/EVP of Engineering | Squadra Solutions", 
-			Role:     "Keynote Speaker",
-		},
-
+		{},
+		/*
+			{
+				Pic:      "JohnHammond.png",
+				Name:     "John Hammond",
+				Position: "Cybersecurity Researcher, Educator & Content Creator",
+				Talk:     "Cybersecurity Shop Talk",
+				Time:	  "",
+			},
+			{
+				Pic:      "CelinePedalino.jpg",
+				Name:     "Celine Pedalino",
+				Position: "SOC Analyst at the NJCCIC",
+				Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
+				Time:	  "",
+			},
+			{
+				Pic:      "SeonukKim.jpg",
+				Name:     "Seonuk Kim",
+				Position: "SOC Analyst at the NJCCIC",
+				Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
+				Time:	  "",
+			},
+			{
+				Pic:      "TrentMeyers.jpg",
+				Name:     "Trent Meyers",
+				Position: "SOC Analyst at the NJCCIC",
+				Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
+				Time:	  "",
+			},
+			{
+				Pic:      "SwathiParthibha.jpg",
+				Name:     "Swathi Parthibha",
+				Position: "Security Analyst at the NJCCIC",
+				Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
+				Time:	  "",
+			},
+			{
+				Pic:      "personPlaceholder.png",
+				Name:     "Andrew Garcia",
+				Position: "Security Analyst at the NJCCIC",
+				Talk:     "Two-Factor Authentication: Not as Secure as You Think",
+				Time:	  "",
+			},
+			{
+				Pic:      "IlanPonimansky.jpg",
+				Name:     "Ilan Ponimansky",
+				Position: "Staff Cloud Security Engineer at Block",
+				Talk:     "Acing your Cloud Security Interviews AMA",
+				Time:	  "",
+			},
+			{
+				Pic:      "personPlaceholder.png",
+				Name:     "Kevin Conklin",
+				Position: "Cyber National Security Supervisory Special Agent at FBI Newark",
+				Talk:     "Inside the FBI Cyber Program",
+				Time:	  "",
+			},
+		*/
 	}
 }
 
@@ -113,62 +107,13 @@ func Speaker(w http.ResponseWriter, tpl *template.Template) {
 
 	tpl.ExecuteTemplate(w, "speaker-start", nil)
 
-	length := len(speakers)
+	tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
 
-	// Creates a single line of speakers
-	if length < 6 {
-		tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
-
-		for _, speaker := range speakers {
-			tpl.ExecuteTemplate(w, "speaker-card", speaker)
-		}
-
-		tpl.ExecuteTemplate(w, "speaker-div-end", nil)
+	for _, speaker := range speakers {
+		tpl.ExecuteTemplate(w, "speaker-card", speaker)
 	}
 
-	// Creates 2 card groups, split by using some integer division
-	if length <= 12 && length >= 6 {
-
-		// First Group of Speakers (Speakers[0: length/2])
-		tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
-
-		for _, speaker := range speakers[0 : length/2] {
-			tpl.ExecuteTemplate(w, "speaker-card", speaker)
-		}
-
-		tpl.ExecuteTemplate(w, "speaker-div-end", nil)
-
-		// Second Group of Speakers (Speakers[length/2: length])
-		tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
-
-		for _, speaker := range speakers[length/2 : length] {
-			tpl.ExecuteTemplate(w, "speaker-card", speaker)
-		}
-
-		tpl.ExecuteTemplate(w, "speaker-div-end", nil)
-
-	}
-
-	// Creates a dynamic grid
-	if length > 12 {
-		var iter int
-
-		for idx, speaker := range speakers {
-
-			iter++
-
-			j := idx + 1
-			if j%SEGMENT_NUM == 1 {
-				tpl.ExecuteTemplate(w, "speaker-card-group-start", nil)
-			}
-
-			tpl.ExecuteTemplate(w, "speaker-card", speaker)
-
-			if iter%SEGMENT_NUM == 0 {
-				tpl.ExecuteTemplate(w, "speaker-div-end", nil)
-			}
-		}
-	}
+	tpl.ExecuteTemplate(w, "speaker-div-end", nil)
 
 	tpl.ExecuteTemplate(w, "speaker-div-end", nil)
 
