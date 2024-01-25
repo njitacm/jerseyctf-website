@@ -71,6 +71,11 @@ li{
     height: 75px;
 }
 
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 [id='Code of Conduct'] > p,
 [id='Privacy Policy'] > p{
     padding: .5% 4% .5% 4%;
