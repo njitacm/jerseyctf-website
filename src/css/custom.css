@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .jerctf {
     padding: 15px;
     background-color: #2c2c2c;
@@ -85,3 +86,92 @@ li{
 [id='Privacy Policy'] > h3{
     font-weight: bold;
 }
+=======
+.jerctf {
+    padding: 15px;
+    background-color: #2c2c2c;
+    color: #fd0000;
+}
+
+.title-info{
+    color: white;
+}
+.footnote-info{
+    color:white;
+    margin-top: -10px;
+    font-size: 75%;
+    margin-left: 15%;
+}
+.registText{
+    margin: 10px 0px 20px 0px;
+    text-align: center;
+}
+/* Sponsor Section */
+.sponsec {
+    margin-top: 1%; 
+    margin-bottom: 1%;
+}
+
+[class*="sponsor-"] {
+    font-size: xx-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sponsor-title {  background-color: #b9f2ff; }
+.sponsor-ciso {  background-color: #f5de33; }
+.sponsor-manager { background-color: #b9c1c9; }
+.sponsor-analyst { background-color: #bd9939; }
+
+.centralize{
+    margin: auto;    
+    display: block;
+}
+
+/* FAQ Section */
+.faq-question {
+    color: #c91d05;
+}
+
+/* Footer Section */
+.foots {
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    background-color: #2c2c2c;
+    color: #ffffff;
+    text-align: center;
+}
+
+.foots-img {
+    padding: 8px 15px 5px 15px;
+    height: 70px;
+}
+
+.sched{
+    justify-content: center;
+    margin-bottom:10px;
+}
+
+li{
+    margin: .5% 0 .5% 5%;
+}
+
+.resourceImg{
+    height: 75px;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[id='Code of Conduct'] > p,
+[id='Privacy Policy'] > p{
+    padding: .5% 4% .5% 4%;
+}
+
+[id='Code of Conduct'] > h3,
+[id='Privacy Policy'] > h3{
+    font-weight: bold;
+}
+>>>>>>> dadbb8e970c163deaec425369474779ebd3f1ab8
