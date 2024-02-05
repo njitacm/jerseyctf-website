@@ -30,65 +30,27 @@ type SpeakerStruct struct {
 
 func GetSpeakers() []SpeakerStruct {
 	return []SpeakerStruct{
-		{},
-		/*
-			{
-				Pic:      "JohnHammond.png",
-				Name:     "John Hammond",
-				Position: "Cybersecurity Researcher, Educator & Content Creator",
-				Talk:     "Cybersecurity Shop Talk",
-				Time:	  "",
-			},
-			{
-				Pic:      "CelinePedalino.jpg",
-				Name:     "Celine Pedalino",
-				Position: "SOC Analyst at the NJCCIC",
-				Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
-				Time:	  "",
-			},
-			{
-				Pic:      "SeonukKim.jpg",
-				Name:     "Seonuk Kim",
-				Position: "SOC Analyst at the NJCCIC",
-				Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
-				Time:	  "",
-			},
-			{
-				Pic:      "TrentMeyers.jpg",
-				Name:     "Trent Meyers",
-				Position: "SOC Analyst at the NJCCIC",
-				Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
-				Time:	  "",
-			},
-			{
-				Pic:      "SwathiParthibha.jpg",
-				Name:     "Swathi Parthibha",
-				Position: "Security Analyst at the NJCCIC",
-				Talk:     "Behind the Scenes of Cyber Defense: A Look into the SOC",
-				Time:	  "",
-			},
-			{
-				Pic:      "personPlaceholder.png",
-				Name:     "Andrew Garcia",
-				Position: "Security Analyst at the NJCCIC",
-				Talk:     "Two-Factor Authentication: Not as Secure as You Think",
-				Time:	  "",
-			},
-			{
-				Pic:      "IlanPonimansky.jpg",
-				Name:     "Ilan Ponimansky",
-				Position: "Staff Cloud Security Engineer at Block",
-				Talk:     "Acing your Cloud Security Interviews AMA",
-				Time:	  "",
-			},
-			{
-				Pic:      "personPlaceholder.png",
-				Name:     "Kevin Conklin",
-				Position: "Cyber National Security Supervisory Special Agent at FBI Newark",
-				Talk:     "Inside the FBI Cyber Program",
-				Time:	  "",
-			},
-		*/
+		{
+			Pic:      "personPlaceholder.png",
+			Name:     "James Perry",
+			Position: "Security Lead at AWS",
+			Talk:     "TBD",
+			Time:     "",
+		},
+		{
+			Pic:      "personPlaceholder.png",
+			Name:     "TBD",
+			Position: "",
+			Talk:     "",
+			Time:     "",
+		},
+		{
+			Pic:      "personPlaceholder.png",
+			Name:     "TBD",
+			Position: "",
+			Talk:     "",
+			Time:     "",
+		},
 	}
 }
 
