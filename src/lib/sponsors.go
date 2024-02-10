@@ -45,6 +45,18 @@ func GetSponsors() Sponsors {
 			ALT:    "AWS",
 			Width:  "200",
 		},
+		{
+			HREF:   "https://www.crowdstrike.com/en-us/",
+			Source: "crowdstrike.png",
+			ALT:    "CrowdStrike",
+			Width:  "200",
+		},
+		{
+			HREF:   "https://www.isaca.org/",
+			Source: "ISACA_logo_RGB.jpg",
+			ALT:    "ISACA",
+			Width:  "200",
+		},
 	}
 
 	tiers := []Tier{
