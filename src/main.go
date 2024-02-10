@@ -6,6 +6,7 @@ import (
 	"net/http"
 	"strconv"
 	"text/template"
+
 	L "github.com/njitacm/jerseyctf-website/src/lib" //Not the current Repo, but everything works, look into if changes should be made
 )
 
@@ -20,36 +21,36 @@ func index(w http.ResponseWriter, r *http.Request) {
 	tmpl.ExecuteTemplate(w, "header", nil)
 
 	//The sections that load are based off of what strings are in this list
-	navBar := []string{ "Schedule","Speakers","Sponsors","FAQ","Resources"} // "Registration","Schedule","Speakers","Sponsors","Recognitions","FAQ","Resources"
+	navBar := []string{"Registration", "Schedule", "Speakers", "Sponsors", "FAQ", "Resources"} // "Registration","Schedule","Speakers","Sponsors","Recognitions","FAQ","Resources"
 	tmpl.ExecuteTemplate(w, "navNBody", navBar)
 
 	tmpl.ExecuteTemplate(w, "infographic", nil)
 
 	for _, value := range navBar {
 		switch value {
-			case "Registration":
-				tmpl.ExecuteTemplate(w, "registration", nil)
+		case "Registration":
+			tmpl.ExecuteTemplate(w, "registration", nil)
 
-			case "Schedule":
-				tmpl.ExecuteTemplate(w, "schedule", nil)
+		case "Schedule":
+			tmpl.ExecuteTemplate(w, "schedule", nil)
 
-			case "Speakers":
-				L.Speaker(w, tmpl)
+		case "Speakers":
+			L.Speaker(w, tmpl)
 
-			case "Sponsors":
-				sponsors := L.GetSponsors()
-				tmpl.ExecuteTemplate(w, "sponsors", sponsors)
+		case "Sponsors":
+			sponsors := L.GetSponsors()
+			tmpl.ExecuteTemplate(w, "sponsors", sponsors)
 
-			case "FAQ":
-				faq := L.GetFaq()
-				tmpl.ExecuteTemplate(w, "faq", faq)
+		case "FAQ":
+			faq := L.GetFaq()
+			tmpl.ExecuteTemplate(w, "faq", faq)
 
-			case "Recognitions":
-				L.Recognition(w, tmpl)
+		case "Recognitions":
+			L.Recognition(w, tmpl)
 
-			case "Resources":
-				resources := L.GetResources()
-				tmpl.ExecuteTemplate(w, "resources", resources)
+		case "Resources":
+			resources := L.GetResources()
+			tmpl.ExecuteTemplate(w, "resources", resources)
 		}
 	}
 	tmpl.ExecuteTemplate(w, "footer", nil)
