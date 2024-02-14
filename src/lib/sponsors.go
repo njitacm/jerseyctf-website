@@ -57,6 +57,12 @@ func GetSponsors() Sponsors {
 			ALT:    "ISACA",
 			Width:  "200",
 		},
+		{
+			HREF:   "https://letsdefend.io/",
+			Source: "LetsDefendLogo.png",
+			ALT:    "Let's Defend",
+			Width:  "200",
+		},
 	}
 
 	tiers := []Tier{
